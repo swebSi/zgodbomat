@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# Expo Sweb
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native app built with Expo, featuring authentication, real-time backend, and cross-platform support.
 
-## Get started
+## Tech Stack
 
-1. Install dependencies
+- **Expo Router** - File-based routing
+- **Clerk** - Authentication
+- **Convex** - Backend & real-time database
+- **TanStack Query** - Data fetching & caching
+- **NativeWind** - Tailwind CSS for React Native
+- **Sentry** - Error tracking
+- **i18next** - Internationalization (EN, SK)
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Starting a New Project
 
 ```bash
-npm run reset-project
+# Clone this repository
+git clone https://github.com/swebSi/expo-sweb my-new-project
+cd my-new-project
+
+# Install dependencies
+npm install
+
+# Update app.json with your project details
+# Configure environment variables for Clerk, Convex, and Sentry
+
+# Start development server
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+```bash
+# Install dependencies
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+# Start development server
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Scripts
 
-## Join the community
+- `npm start` - Start Expo dev server
+- `npm run android` - Run on Android
+- `npm run ios` - Run on iOS
+- `npm run web` - Run on web
+- `npm run lint` - Run ESLint
+- `npm run gen:i18n` - Generate i18n translation keys
 
-Join our community of developers creating universal apps.
+## Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `src/app/` - App routes (Expo Router)
+- `src/screens/` - Screen components
+- `src/shared/` - Shared components & utilities
+- `src/core/` - Core providers & layouts
+- `convex/` - Convex backend functions
