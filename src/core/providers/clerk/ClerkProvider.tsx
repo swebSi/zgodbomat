@@ -1,14 +1,13 @@
 import { ClerkProvider as ClerkProviderBase } from '@clerk/clerk-expo';
 import { tokenCache } from '@clerk/clerk-expo/token-cache';
-import Constants from 'expo-constants';
+import { Env } from '@env';
 import type { PropsWithChildren } from 'react';
 
-const clerkPublishableKey =
-  Constants.expoConfig?.extra?.clerkPublishableKey || process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
+const clerkPublishableKey = Env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 if (!clerkPublishableKey) {
   throw new Error(
-    'Missing Clerk Publishable Key. Set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in your environment variables.'
+    'Missing Clerk Publishable Key. Set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in your .env.{APP_ENV} file.'
   );
 }
 

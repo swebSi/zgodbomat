@@ -1,12 +1,11 @@
 import { ConvexReactClient } from "convex/react";
-import Constants from "expo-constants";
+import { Env } from "@env";
 
-const convexUrl =
-  Constants.expoConfig?.extra?.convexUrl || process.env.EXPO_PUBLIC_CONVEX_URL;
+const convexUrl = Env.EXPO_PUBLIC_CONVEX_URL;
 
 if (!convexUrl) {
   throw new Error(
-    "Missing Convex URL. Set EXPO_PUBLIC_CONVEX_URL in your environment variables."
+    "Missing Convex URL. Set EXPO_PUBLIC_CONVEX_URL in your .env.{APP_ENV} file."
   );
 }
 

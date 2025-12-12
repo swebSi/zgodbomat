@@ -3,9 +3,8 @@ import { AuthConfig } from 'convex/server';
 export default {
   providers: [
     {
-      // Replace with your own Clerk Issuer URL from your "convex" JWT template
-      // or with `process.env.CLERK_JWT_ISSUER_DOMAIN`
-      // and configure CLERK_JWT_ISSUER_DOMAIN on the Convex Dashboard
+      // Clerk Issuer URL is loaded from .env.{APP_ENV} file via EXPO_PUBLIC_CLERK_JWT_ISSUER_DOMAIN
+      // Configure this variable in your .env.development, .env.staging, or .env.production file
       // See https://docs.convex.dev/auth/clerk#configuring-dev-and-prod-instances
       domain: process.env.EXPO_PUBLIC_CLERK_JWT_ISSUER_DOMAIN!,
       applicationID: 'convex',

@@ -8,7 +8,8 @@
       "@shared/*": ["src/shared/*"],
       "@core/*": ["src/core/*"],
       "@components/*": ["src/components/*"],
-      "@screens/*": ["src/screens/*"]
+      "@screens/*": ["src/screens/*"],
+      "@env": ["src/shared/lib/env.ts"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "nativewind-env.d.ts"]
