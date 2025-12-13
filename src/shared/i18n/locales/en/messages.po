@@ -13,27 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:52
-msgid "new-adventure-card.create-magic"
+#: src/shared/components/new-adventure-card.tsx:36
+msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
+msgstr "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
+
+#: src/shared/components/new-adventure-card.tsx:46
+msgid "Create Magic"
 msgstr "Create Magic"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:45
-msgid "new-adventure-card.description"
-msgstr "Description"
-
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:28
-msgid "new-adventure-card.new-adventure"
+#: src/shared/components/new-adventure-card.tsx:23
+msgid "New Adventure"
 msgstr "New Adventure"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:39
-msgid "new-adventure-card.new-tale"
+#: src/shared/components/new-adventure-card.tsx:29
+msgid "New Tale"
 msgstr "New Tale"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:36
-msgid "new-adventure-card.weave-a"
+#: src/shared/components/new-adventure-card.tsx:28
+msgid "Weave a"
 msgstr "Weave a"

@@ -1,3 +1,5 @@
+import { I18nProvider } from '@lingui/react';
+import i18n from '@shared/i18n/i18n';
 import type { LanguageType } from '@shared/i18n/model/localize';
 import { LanguageList } from '@shared/i18n/model/localize';
 import {
@@ -7,8 +9,6 @@ import {
 import { getLocales, useLocales } from 'expo-localization';
 import type { FC, ReactNode } from 'react';
 import { createContext, useContext, useEffect, useLayoutEffect, useState } from 'react';
-import { I18nProvider } from '@lingui/react';
-import i18n from '@shared/i18n/i18n';
 
 const deviceLanguage = getLocales()[0]?.languageCode ?? LanguageList.EN;
 const defaultLanguage = ['en', 'sl'].includes(deviceLanguage)

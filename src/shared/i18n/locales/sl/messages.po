@@ -13,27 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:52
-msgid "new-adventure-card.create-magic"
-msgstr "Ustvari čarobno"
+#: src/shared/components/new-adventure-card.tsx:36
+msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
+msgstr "Ustvarite čarobno zgodbo pred spanjem v sekundah. Izberite temo, izberite junaka in naj se čarobnost začne."
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:45
-msgid "new-adventure-card.description"
-msgstr "Opis"
+#: src/shared/components/new-adventure-card.tsx:46
+msgid "Create Magic"
+msgstr "Ustvari čarobnost"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:28
-msgid "new-adventure-card.new-adventure"
-msgstr "Nova pustolovščina"
+#: src/shared/components/new-adventure-card.tsx:23
+msgid "New Adventure"
+msgstr "Nova avantura"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:39
-msgid "new-adventure-card.new-tale"
+#: src/shared/components/new-adventure-card.tsx:29
+msgid "New Tale"
 msgstr "Nova zgodba"
 
-#. js-lingui-explicit-id
-#: src/shared/components/ui/new-adventure-card.tsx:36
-msgid "new-adventure-card.weave-a"
+#: src/shared/components/new-adventure-card.tsx:28
+msgid "Weave a"
 msgstr "Spletite"
