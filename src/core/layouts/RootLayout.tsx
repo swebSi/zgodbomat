@@ -14,6 +14,10 @@ import AppContextProviders from '../providers/AppProvider';
 
 import { initSentry } from '@shared/config/sentry';
 import { NAV_THEME } from '@shared/lib/theme/theme';
+import {
+  constantStorage,
+  STORAGE_CONSTANT_IS_USER_ONBOARDED,
+} from '@shared/storage/contstant-storage';
 import { useConvexAuth } from 'convex/react';
 import '../global.css';
 
@@ -109,8 +113,15 @@ export function RootLayout() {
 
     return (
       <Stack>
-        {/* Screens only shown when the user is NOT signed in */}
-        <Stack.Protected guard={!isAuthenticated}>
+        {/* Onboarding screens - shown first time before login, but child-create accessible after login */}
+        <Stack.Screen name="(onboarding)" options={{ headerShown: false }} />
+
+        {/* Screens only shown when the user is NOT signed in and onboarded */}
+        <Stack.Protected
+          guard={
+            !isAuthenticated &&
+            (constantStorage.getBoolean(STORAGE_CONSTANT_IS_USER_ONBOARDED) ?? false)
+          }>
           <Stack.Screen name="(auth)/login" options={SIGN_IN_SCREEN_OPTIONS} />
           <Stack.Screen name="(auth)/sign-up" options={SIGN_UP_SCREEN_OPTIONS} />
           <Stack.Screen name="(auth)/password-reset" options={DEFAULT_AUTH_SCREEN_OPTIONS} />
@@ -118,8 +129,12 @@ export function RootLayout() {
           <Stack.Screen name="(auth)/verify-second-factor" options={DEFAULT_AUTH_SCREEN_OPTIONS} />
         </Stack.Protected>
 
-        {/* Screens only shown when the user IS signed in */}
-        <Stack.Protected guard={isAuthenticated}>
+        {/* Screens only shown when the user IS signed in and onboarded */}
+        <Stack.Protected
+          guard={
+            isAuthenticated &&
+            (constantStorage.getBoolean(STORAGE_CONSTANT_IS_USER_ONBOARDED) ?? false)
+          }>
           <Stack.Screen name="(app)" options={DEFAULT_APP_SCREEN_OPTIONS} />
         </Stack.Protected>
 

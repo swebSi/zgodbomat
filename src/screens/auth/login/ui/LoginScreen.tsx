@@ -4,10 +4,14 @@ import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
 import { Label } from '@shared/components/ui/label';
 import { Text } from '@shared/components/ui/text';
+import { constantStorageMMKV } from '@shared/storage/contstant-storage';
+import { globalStorageMMKV } from '@shared/storage/global-storage';
+import { queryStorageMMKV } from '@shared/storage/query-storage/query-storage';
+import { zustandStorageMMKV } from '@shared/storage/zustand-storage';
 import { Link, router } from 'expo-router';
 import { useRef, useState } from 'react';
 import type { TextInput } from 'react-native';
-import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
+import { Alert, KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
 
 export default function LoginScreen() {
   const { signIn, setActive, isLoaded } = useSignIn();
@@ -75,6 +79,38 @@ export default function LoginScreen() {
 
   const onEmailSubmitEditing = () => {
     passwordInputRef.current?.focus();
+  };
+
+  const handleClearAllStorage = () => {
+    if (__DEV__) {
+      Alert.alert(
+        'Clear All Storage',
+        'This will delete all data from all storage instances. Are you sure?',
+        [
+          { text: 'Cancel', style: 'cancel' },
+          {
+            text: 'Clear All',
+            style: 'destructive',
+            onPress: () => {
+              globalStorageMMKV.clearAll();
+              zustandStorageMMKV.clearAll();
+              constantStorageMMKV.clearAll();
+              queryStorageMMKV.clearAll();
+
+              Alert.alert('Success', 'All storage cleared! Redirecting to onboarding...', [
+                {
+                  text: 'OK',
+                  onPress: () => {
+                    // Force navigation to onboarding
+                    router.replace('/(onboarding)');
+                  },
+                },
+              ]);
+            },
+          },
+        ]
+      );
+    }
   };
 
   return (
@@ -179,12 +215,24 @@ export default function LoginScreen() {
                 <Text variant="muted">Don't have an account?</Text>
                 <Link href="/(auth)/sign-up" asChild>
                   <Button variant="ghost" className="h-auto p-0">
-                    <Text variant="small" className="text-primary font-medium">
+                    <Text variant="small" className="font-medium text-primary">
                       Sign up
                     </Text>
                   </Button>
                 </Link>
               </View>
+
+              {/* Dev Only: Clear All Storage Button */}
+              {__DEV__ && (
+                <Button
+                  variant="outline"
+                  onPress={handleClearAllStorage}
+                  className="mt-4 h-10 border-destructive">
+                  <Text variant="small" className="text-destructive">
+                    🗑️ Clear All Storage (Dev Only)
+                  </Text>
+                </Button>
+              )}
             </View>
           </View>
         </ScrollView>

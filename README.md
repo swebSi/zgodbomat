@@ -1,4 +1,4 @@
-# Expo Sweb
+# Zgodbomat
 
 React Native app built with Expo, featuring authentication, real-time backend, and cross-platform support.
 
@@ -16,7 +16,7 @@ React Native app built with Expo, featuring authentication, real-time backend, a
 
 ```bash
 # Clone this repository
-git clone https://github.com/swebSi/expo-sweb my-new-project
+git clone https://github.com/zgodbomat/zgodbomat-app my-new-project
 cd my-new-project
 
 # Install dependencies

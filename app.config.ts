@@ -51,7 +51,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       {
         url: 'https://sentry.io/',
         project: 'zgodbe',
-        organization: 'sweb-ei',
+        organization: 'zgodbomat',
       },
     ],
   ],
