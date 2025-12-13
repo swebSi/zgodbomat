@@ -7,7 +7,8 @@ import {
 import { getLocales, useLocales } from 'expo-localization';
 import type { FC, ReactNode } from 'react';
 import { createContext, useContext, useEffect, useLayoutEffect, useState } from 'react';
-import i18n from '../../../shared/i18n/i18n';
+import { I18nProvider } from '@lingui/react';
+import i18n from '@shared/i18n/i18n';
 
 const deviceLanguage = getLocales()[0]?.languageCode ?? LanguageList.EN;
 const defaultLanguage = ['en', 'sl'].includes(deviceLanguage)
@@ -33,13 +34,15 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (language) {
-      i18n.changeLanguage(language);
+      i18n.activate(language);
       constantStorage.setItem(STORAGE_CONSTANT_PREFERRED_LANGUAGE, language);
     }
   }, [language]);
 
   return (
-    <LocaleContext.Provider value={{ language, setLanguage }}>{children}</LocaleContext.Provider>
+    <I18nProvider i18n={i18n}>
+      <LocaleContext.Provider value={{ language, setLanguage }}>{children}</LocaleContext.Provider>
+    </I18nProvider>
   );
 };
 

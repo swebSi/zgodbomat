@@ -25,7 +25,7 @@ module.exports = function (api) {
         },
       ],
       'react-native-worklets/plugin',
-      ['@babel/plugin-proposal-decorators', { legacy: true }],
+      '@lingui/babel-plugin-lingui-macro',
     ],
   };
 };
