@@ -22,7 +22,7 @@ export function NewAdventureCard({ className, onPress, ...props }: NewAdventureC
         <View className="absolute inset-0" />
       </ImageBackground>
       {/* Dark overlay */}
-      <View className="absolute inset-0 bg-black/60" />
+      <View className="absolute inset-0 bg-black/30" />
       <View className="absolute right-4 top-4 z-10 flex-row gap-1">
         <Ionicons name="sparkles" size={20} color="white" />
       </View>

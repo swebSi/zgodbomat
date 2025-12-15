@@ -1,4 +1,5 @@
-import { useSignUp } from '@clerk/clerk-expo';
+import { useSignUp, useUser } from '@clerk/clerk-expo';
+import { useLocale } from '@core/providers/language/LanguageProvider';
 import { ScreenContent } from '@shared/components/ScreenContent/ui/ScreenContent';
 import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
@@ -11,9 +12,11 @@ import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
 
 export default function SignUp() {
   const { signUp, isLoaded } = useSignUp();
+  const { user } = useUser();
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const passwordInputRef = React.useRef<TextInput>(null);
+  const { language } = useLocale();
   const [error, setError] = React.useState<{
     email?: string;
     password?: string;
@@ -27,6 +30,9 @@ export default function SignUp() {
       await signUp.create({
         emailAddress: email,
         password,
+        unsafeMetadata: {
+          language,
+        },
       });
 
       // Send user an email with verification code
@@ -128,7 +134,7 @@ export default function SignUp() {
                 <Text variant="muted">Already have an account?</Text>
                 <Link href="/(auth)/login" asChild>
                   <Button variant="ghost" className="h-auto p-0">
-                    <Text variant="small" className="text-primary font-medium">
+                    <Text variant="small" className="font-medium text-primary">
                       Sign in
                     </Text>
                   </Button>

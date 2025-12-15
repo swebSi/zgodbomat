@@ -116,12 +116,8 @@ export function RootLayout() {
         {/* Onboarding screens - shown first time before login, but child-create accessible after login */}
         <Stack.Screen name="(onboarding)" options={{ headerShown: false }} />
 
-        {/* Screens only shown when the user is NOT signed in and onboarded */}
-        <Stack.Protected
-          guard={
-            !isAuthenticated &&
-            (constantStorage.getBoolean(STORAGE_CONSTANT_IS_USER_ONBOARDED) ?? false)
-          }>
+        {/* Auth screens - only shown when the user is NOT signed in */}
+        <Stack.Protected guard={!isAuthenticated}>
           <Stack.Screen name="(auth)/login" options={SIGN_IN_SCREEN_OPTIONS} />
           <Stack.Screen name="(auth)/sign-up" options={SIGN_UP_SCREEN_OPTIONS} />
           <Stack.Screen name="(auth)/password-reset" options={DEFAULT_AUTH_SCREEN_OPTIONS} />
@@ -150,7 +146,6 @@ const SIGN_IN_SCREEN_OPTIONS = {
 };
 
 const SIGN_UP_SCREEN_OPTIONS = {
-  presentation: 'modal',
   title: '',
   headerTransparent: true,
   gestureEnabled: false,

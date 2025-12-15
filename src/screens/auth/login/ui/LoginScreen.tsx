@@ -4,6 +4,7 @@ import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
 import { Label } from '@shared/components/ui/label';
 import { Text } from '@shared/components/ui/text';
+import { t } from '@lingui/core/macro';
 import { constantStorageMMKV } from '@shared/storage/contstant-storage';
 import { globalStorageMMKV } from '@shared/storage/global-storage';
 import { queryStorageMMKV } from '@shared/storage/query-storage/query-storage';
@@ -27,7 +28,7 @@ export default function LoginScreen() {
     }
 
     if (!email.trim() || !password.trim()) {
-      setError({ email: '', password: 'Please fill in all fields' });
+      setError({ email: '', password: t`Please fill in all fields` });
       return;
     }
 
@@ -58,7 +59,7 @@ export default function LoginScreen() {
 
       // Handle other statuses
       console.error(JSON.stringify(signInAttempt, null, 2));
-      setError({ password: 'Sign in incomplete. Please try again.' });
+      setError({ password: t`Sign in incomplete. Please try again.` });
     } catch (err) {
       if (err instanceof Error) {
         const isEmailMessage =
@@ -70,7 +71,7 @@ export default function LoginScreen() {
             : { email: '', password: err.message }
         );
       } else {
-        setError({ password: 'An error occurred. Please try again.' });
+        setError({ password: t`An error occurred. Please try again.` });
       }
     } finally {
       setIsLoading(false);
@@ -97,7 +98,10 @@ export default function LoginScreen() {
               constantStorageMMKV.clearAll();
               queryStorageMMKV.clearAll();
 
-              Alert.alert('Success', 'All storage cleared! Redirecting to onboarding...', [
+              Alert.alert(
+                t`Success`,
+                t`All storage cleared! Redirecting to onboarding...`,
+                [
                 {
                   text: 'OK',
                   onPress: () => {
@@ -105,7 +109,8 @@ export default function LoginScreen() {
                     router.replace('/(onboarding)');
                   },
                 },
-              ]);
+              ]
+              );
             },
           },
         ]
@@ -125,10 +130,10 @@ export default function LoginScreen() {
             {/* Header */}
             <View className="gap-2">
               <Text variant="h1" className="text-center">
-                Welcome back
+                {t`Welcome back`}
               </Text>
               <Text variant="muted" className="text-center">
-                Sign in to continue to your account
+                {t`Sign in to continue to your account`}
               </Text>
             </View>
 
@@ -137,12 +142,12 @@ export default function LoginScreen() {
               {/* Email Input */}
               <View className="gap-2">
                 <Label htmlFor="email" nativeID="email">
-                  Email
+                  {t`Email`}
                 </Label>
                 <Input
                   id="email"
                   nativeID="email"
-                  placeholder="Enter your email"
+                  placeholder={t`Enter your email`}
                   onChangeText={(text) => {
                     setEmail(text);
                     setError({});
@@ -167,12 +172,12 @@ export default function LoginScreen() {
               <View className="gap-2">
                 <View className="flex-row items-center justify-between">
                   <Label htmlFor="password" nativeID="password">
-                    Password
+                    {t`Password`}
                   </Label>
                   <Link href="/(auth)/forgot-password" asChild>
                     <Button variant="ghost" className="h-auto p-0">
                       <Text variant="small" className="text-primary">
-                        Forgot password?
+                        {t`Forgot password?`}
                       </Text>
                     </Button>
                   </Link>
@@ -181,7 +186,7 @@ export default function LoginScreen() {
                   ref={passwordInputRef}
                   id="password"
                   nativeID="password"
-                  placeholder="Enter your password"
+                  placeholder={t`Enter your password`}
                   onChangeText={(text) => {
                     setPassword(text);
                     setError({});
@@ -207,16 +212,16 @@ export default function LoginScreen() {
                 disabled={isLoading || !isLoaded}
                 className="mt-6 h-12"
                 size="lg">
-                <Text>{isLoading ? 'Please wait...' : 'Sign in'}</Text>
+                <Text>{isLoading ? t`Please wait...` : t`Sign in`}</Text>
               </Button>
 
               {/* Sign Up Link */}
               <View className="flex-row items-center justify-center gap-2 pt-4">
-                <Text variant="muted">Don't have an account?</Text>
+                <Text variant="muted">{t`Don't have an account?`}</Text>
                 <Link href="/(auth)/sign-up" asChild>
                   <Button variant="ghost" className="h-auto p-0">
                     <Text variant="small" className="font-medium text-primary">
-                      Sign up
+                      {t`Sign up`}
                     </Text>
                   </Button>
                 </Link>

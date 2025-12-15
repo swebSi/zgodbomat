@@ -9,6 +9,8 @@ interface UserSettingsStore {
   setPreferredTheme: (preferredTheme: 'light' | 'dark' | 'system') => void;
   enabledPushNotifications: boolean;
   setEnabledPushNotifications: (enabledPushNotifications: boolean) => void;
+  activeChildId: string | null;
+  setActiveChildId: (activeChildId: string | null) => void;
 }
 
 export const useUserSettingsStore = create<UserSettingsStore>()(
@@ -20,6 +22,8 @@ export const useUserSettingsStore = create<UserSettingsStore>()(
       setPreferredTheme: (preferredTheme) => set({ preferredTheme }),
       enabledPushNotifications: false,
       setEnabledPushNotifications: (enabledPushNotifications) => set({ enabledPushNotifications }),
+      activeChildId: null,
+      setActiveChildId: (activeChildId) => set({ activeChildId }),
     }),
     {
       name: 'user-settings-storage',

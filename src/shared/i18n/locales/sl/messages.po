@@ -1,34 +1,460 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-12-13 13:59+0100\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: @lingui/cli\n"
-"Language: sl\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
+"Language: \n"
 "Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#: src/shared/components/new-adventure-card.tsx:36
+#: src/app/(app)/(tabs)/settings.tsx:90
+msgid "Account security"
+msgstr "Varnost računa"
+
+#: src/app/(app)/child-create.tsx:193
+msgid "Age"
+msgstr "Starost"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:194
+msgid "AI Generated"
+msgstr "Ustvarjeno z AI"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:103
+msgid "All storage cleared! Redirecting to onboarding..."
+msgstr "Vsa shramba je izbrisana! Preusmerjanje na uvod..."
+
+#: src/app/(app)/(tabs)/settings.tsx:162
+msgid "Allow cellular"
+msgstr "Dovoli mobilne podatke"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:74
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:91
+msgid "An error occurred. Please try again."
+msgstr "Prišlo je do napake. Poskusite znova."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:28
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:81
+msgid "Back"
+msgstr "Nazaj"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:192
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/app/(app)/child-create.tsx:172
+msgid "Child's name or nickname"
+msgstr "Ime ali vzdevek otroka"
+
+#: src/app/(app)/child-create.tsx:215
+msgid "Choose an avatar"
+msgstr "Izberite avatar"
+
+#: src/app/(app)/(tabs)/settings.tsx:173
+msgid "Compact UI"
+msgstr "Kompakten vmesnik"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:194
+msgid "Continue"
+msgstr "Nadaljuj"
+
+#: src/shared/components/new-adventure-card.tsx:48
 msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
 msgstr "Ustvarite čarobno zgodbo pred spanjem v sekundah. Izberite temo, izberite junaka in naj se čarobnost začne."
 
-#: src/shared/components/new-adventure-card.tsx:46
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:52
+msgid "new-adventure-card.create-magic"
+msgstr "Ustvari čarobnost"
+
+#: src/shared/components/new-adventure-card.tsx:58
 msgid "Create Magic"
 msgstr "Ustvari čarobnost"
 
-#: src/shared/components/new-adventure-card.tsx:23
+#: src/app/(app)/child-create.tsx:260
+msgid "Create Story"
+msgstr "Ustvari zgodbo"
+
+#: src/app/(app)/child-create.tsx:257
+msgid "Creating..."
+msgstr "Ustvarjanje..."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:174
+msgid "Customize"
+msgstr "Prilagodite"
+
+#: src/app/(app)/(tabs)/settings.tsx:126
+msgid "Daily reminders and bedtime alerts"
+msgstr "Dnevni opomniki in obvestila za spanje"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:112
+msgid "Deep Space"
+msgstr "Globoko vesolje"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:45
+msgid "new-adventure-card.description"
+msgstr "Ustvarite čarobno zgodbo pred spanjem v sekundah. Izberite temo, izberite junaka in naj se čarobnost začne."
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:170
+msgid "Didn't receive the code? Resend"
+msgstr "Niste prejeli kode? Pošljite ponovno"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:220
+msgid "Don't have an account?"
+msgstr "Nimate računa?"
+
+#: src/app/(app)/(tabs)/settings.tsx:143
+msgid "Downloads"
+msgstr "Prenosi"
+
+#: src/app/(app)/child-create.tsx:160
+msgid "Edit Child Profile"
+msgstr "Uredi profil otroka"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:76
+#: src/screens/auth/login/ui/LoginScreen.tsx:145
+msgid "Email"
+msgstr "E-pošta"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:22
+msgid "Email is required"
+msgstr "E-pošta je obvezna"
+
+#: src/app/(app)/(tabs)/settings.tsx:44
+msgid "Email unavailable"
+msgstr "E-pošta ni na voljo"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:17
+msgid "English"
+msgstr "Angleščina"
+
+#: src/app/(app)/child-create.tsx:200
+msgid "Enter age (1-10)"
+msgstr "Vnesi starost (1-10)"
+
+#: src/app/(app)/child-create.tsx:179
+msgid "Enter name"
+msgstr "Vnesi ime"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:98
+msgid "Enter new password"
+msgstr "Vnesite novo geslo"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:84
+msgid "Enter the code sent to your email and set a new password"
+msgstr "Vnesite kodo, poslano na e-pošto, in nastavite novo geslo"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:130
+msgid "Enter the verification code sent to"
+msgstr "Vnesite preveritveno kodo poslano na"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:126
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:144
+msgid "Enter verification code"
+msgstr "Vnesite preveritveno kodo"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:81
+#: src/screens/auth/login/ui/LoginScreen.tsx:150
+msgid "Enter your email"
+msgstr "Vnesite e-pošto"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:67
+msgid "Enter your email to reset your password"
+msgstr "Vnesite e-pošto za ponastavitev gesla"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:189
+msgid "Enter your password"
+msgstr "Vnesite geslo"
+
+#: src/app/(app)/(tabs)/settings.tsx:105
+msgid "Face/Touch ID"
+msgstr "Face/Touch ID"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:58
+msgid "Failed to reset password. Please try again."
+msgstr "Ponastavitev gesla ni uspela. Poskusite znova."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:45
+msgid "Failed to send reset code. Please try again."
+msgstr "Pošiljanje kode ni uspelo. Poskusite znova."
+
+#: src/app/(app)/(tabs)/settings.tsx:45
+msgid "Fetching email..."
+msgstr "Pridobivanje e-pošte..."
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:180
+msgid "Forgot password?"
+msgstr "Ste pozabili geslo?"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:64
+msgid "Forgot Password?"
+msgstr "Ste pozabili geslo?"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:276
+msgid "Get Started"
+msgstr "Začni"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:63
+msgid "Just for Them"
+msgstr "Samo zanje"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:141
+msgid "Kindness"
+msgstr "Prijaznost"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:83
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:136
+msgid "Leo"
+msgstr "Leo"
+
+#: src/app/(app)/(tabs)/settings.tsx:40
+msgid "Loading profile"
+msgstr "Nalaganje profila"
+
+#: src/app/(app)/(tabs)/settings.tsx:198
+msgid "Log out"
+msgstr "Odjava"
+
+#: src/app/(app)/(tabs)/settings.tsx:91
+msgid "Logged in with Clerk"
+msgstr "Prijavljen prek Clerk"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:140
+msgid "Moral"
+msgstr "Nauk"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:28
+msgid "new-adventure-card.new-adventure"
+msgstr "Nova avantura"
+
+#: src/shared/components/new-adventure-card.tsx:33
 msgid "New Adventure"
 msgstr "Nova avantura"
 
-#: src/shared/components/new-adventure-card.tsx:29
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:93
+msgid "New Password"
+msgstr "Novo geslo"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:39
+msgid "new-adventure-card.new-tale"
+msgstr "Nova zgodba"
+
+#: src/shared/components/new-adventure-card.tsx:41
 msgid "New Tale"
 msgstr "Nova zgodba"
 
-#: src/shared/components/new-adventure-card.tsx:28
+#: src/app/(app)/(tabs)/settings.tsx:124
+msgid "Notifications"
+msgstr "Obvestila"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:175
+msgid "Password"
+msgstr "Geslo"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:31
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:29
+msgid "Please fill in all fields"
+msgstr "Prosimo, izpolnite vsa polja"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:215
+msgid "Please wait..."
+msgstr "Prosimo, počakajte..."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:266
+msgid "Record stories in your own voice so your little one can hear you anytime, anywhere."
+msgstr "Snemajte zgodbe s svojim glasom, da vas bo otrok lahko slišal kjerkoli in kadarkoli."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:234
+msgid "Recording..."
+msgstr "Snemanje..."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:119
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:160
+msgid "Remember your password?"
+msgstr "Se spomnite gesla?"
+
+#: src/app/(app)/(tabs)/settings.tsx:107
+msgid "Require biometrics for quick unlock"
+msgstr "Zahtevaj biometrijo za hitro odklepanje"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:102
+msgid "Reset code sent! Check your email."
+msgstr "Koda za ponastavitev je poslana! Preverite e-pošto."
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:48
+msgid "Reset incomplete. Please try again."
+msgstr "Ponastavitev ni dokončana. Poskusite znova."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:114
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:81
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:155
+msgid "Reset Password"
+msgstr "Ponastavi geslo"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:155
+msgid "Resetting..."
+msgstr "Ponastavljanje..."
+
+#: src/app/(app)/(tabs)/settings.tsx:145
+msgid "Save stories for offline nights"
+msgstr "Shrani zgodbe za noči brez povezave"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:114
+msgid "Sending..."
+msgstr "Pošiljanje..."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:109
+msgid "Setting"
+msgstr "Nastavitev"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:122
+#: src/screens/auth/login/ui/LoginScreen.tsx:215
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:164
+msgid "Sign in"
+msgstr "Prijava"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:62
+msgid "Sign in incomplete. Please try again."
+msgstr "Prijava ni dokončana. Poskusite znova."
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:136
+msgid "Sign in to continue to your account"
+msgstr "Prijavite se za nadaljevanje v svoj račun"
+
+#: src/app/(app)/(tabs)/settings.tsx:199
+msgid "Sign out of this account"
+msgstr "Odjavite se iz tega računa"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:224
+msgid "Sign up"
+msgstr "Ustvari račun"
+
+#: src/app/(app)/(tabs)/settings.tsx:39
+msgid "Signed in user"
+msgstr "Prijavljen uporabnik"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:18
+msgid "Slovenian"
+msgstr "Slovenščina"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:112
+msgid "Start the Magic"
+msgstr "Začni čarovnijo"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:60
+msgid "Stories Made"
+msgstr "Zgodbe ustvarjene"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:102
+msgid "Success"
+msgstr "Uspeh"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:184
+msgid "Tell us about your child, pick a magical setting, and choose a life lesson. We'll weave a unique tale that sparks their imagination."
+msgstr "Povejte nam o svojem otroku, izberite čarobno okolje in nauk. Ustvarili bomo edinstveno zgodbo, ki bo prižgala njihovo domišljijo."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:230
+msgid "The Sleepy Bear"
+msgstr "Zaspani medved"
+
+#: src/app/(app)/(tabs)/settings.tsx:175
+msgid "Tighter spacing for small screens"
+msgstr "Tesnejši razmiki za manjše zaslone"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:69
+msgid "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
+msgstr "Spremenite čas za spanje v pustolovščino. Ustvarite zgodbe z nauki po svoji izbiri, v katerih je vaš otrok junak."
+
+#: src/app/(app)/child-create.tsx:259
+msgid "Update Child"
+msgstr "Posodobi otroka"
+
+#: src/app/(app)/child-create.tsx:164
+msgid "Update your child's information."
+msgstr "Posodobite podatke o svojem otroku."
+
+#: src/app/(app)/child-create.tsx:256
+msgid "Updating..."
+msgstr "Posodabljanje..."
+
+#. placeholder {0}: user.id
+#: src/app/(app)/(tabs)/settings.tsx:75
+msgid "User ID: {0}"
+msgstr "ID uporabnika: {0}"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:139
+msgid "Verification code"
+msgstr "Preveritvena koda"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:120
+msgid "Verification Code"
+msgstr "Preveritvena koda"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:84
+msgid "Verification incomplete. Please try again."
+msgstr "Preverjanje ni dokončano. Poskusite znova."
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:127
+msgid "Verify your identity"
+msgstr "Preverite svojo identiteto"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
+msgid "Verifying..."
+msgstr "Preverjanje..."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:162
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:193
+msgid "Voice"
+msgstr "Glas"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:106
+msgid "We need your language to craft stories and voices that feel natural. This choice stays fixed so your library is consistent."
+msgstr "Potrebujemo vaš jezik za ustvarjanje zgodb in glasov, ki se slišijo naravno. Ta izbira ostane fiksna, da bo vaša knjižnica konsistentna."
+
+#: src/app/(app)/child-create.tsx:165
+msgid "We use this to personalize stories just for your child."
+msgstr "To uporabljamo za prilagajanje zgodb posebej za vašega otroka."
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:36
+msgid "new-adventure-card.weave-a"
+msgstr "Spletite"
+
+#: src/shared/components/new-adventure-card.tsx:39
 msgid "Weave a"
 msgstr "Spletite"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:133
+msgid "Welcome back"
+msgstr "Dobrodošli nazaj"
+
+#: src/app/(app)/child-create.tsx:160
+msgid "Who is this story for?"
+msgstr "Za koga je ta zgodba?"
+
+#: src/app/(app)/(tabs)/settings.tsx:162
+msgid "Wi‑Fi only"
+msgstr "Samo Wi‑Fi"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:130
+msgid "your email"
+msgstr "vašo e-pošto"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:165
+msgid "Your Own"
+msgstr "Vaš glas"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:177
+msgid "Your Stories"
+msgstr "Vaše zgodbe"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:260
+msgid "Your Voice, Their Dreams"
+msgstr "Vaš glas, njihove sanje"

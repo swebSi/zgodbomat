@@ -1,5 +1,5 @@
 import { I18nProvider } from '@lingui/react';
-import i18n from '@shared/i18n/i18n';
+import i18n, { activateI18n } from '@shared/i18n/i18n';
 import type { LanguageType } from '@shared/i18n/model/localize';
 import { LanguageList } from '@shared/i18n/model/localize';
 import {
@@ -17,6 +17,7 @@ const defaultLanguage = ['en', 'sl'].includes(deviceLanguage)
 
 export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<LanguageType>(defaultLanguage);
+  const [i18nVersion, setI18nVersion] = useState(0);
   const locales = useLocales();
   const locale = locales[0];
 
@@ -34,14 +35,18 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (language) {
-      i18n.activate(language);
+      activateI18n(language);
+      // Force I18nProvider consumers to re-render when locale changes
+      setI18nVersion((v) => v + 1);
       constantStorage.setItem(STORAGE_CONSTANT_PREFERRED_LANGUAGE, language);
     }
   }, [language]);
 
   return (
-    <I18nProvider i18n={i18n}>
-      <LocaleContext.Provider value={{ language, setLanguage }}>{children}</LocaleContext.Provider>
+    <I18nProvider i18n={i18n} key={i18nVersion}>
+      <LocaleContext.Provider value={{ language, setLanguage, i18nVersion }}>
+        {children}
+      </LocaleContext.Provider>
     </I18nProvider>
   );
 };
@@ -51,9 +56,11 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
 export const LocaleContext = createContext<{
   language: string;
   setLanguage: (language: LanguageType) => void;
+  i18nVersion: number;
 }>({
   language: defaultLanguage,
   setLanguage: () => {},
+  i18nVersion: 0,
 });
 
 export function useLocale() {

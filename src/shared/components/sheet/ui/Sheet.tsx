@@ -17,6 +17,7 @@ type DetachedContentProps = {
   detached?: boolean;
   onDismiss?: () => void;
   snapPoints?: number[];
+  enableDynamicSizing?: boolean;
 };
 
 export const SheetComponent = forwardRef<BottomSheetModal, DetachedContentProps>(
@@ -25,13 +26,19 @@ export const SheetComponent = forwardRef<BottomSheetModal, DetachedContentProps>
     const { bottom: safeBottom } = useSafeAreaInsets();
 
     const backgroundComponent = useCallback(
-      (props: BottomSheetBackgroundProps) => (
-        <View
-          className="bg-background border-primary/10 overflow-hidden rounded-xl border"
-          {...props}
-        />
-      ),
-      []
+      (props: BottomSheetBackgroundProps) => {
+        const { style, ...rest } = props;
+        // Ensure background extends to cover safe area at bottom
+        const backgroundStyle = Array.isArray(style) ? style : [style];
+        return (
+          <View
+            className="overflow-hidden rounded-t-3xl border border-primary/10 bg-background"
+            style={[...backgroundStyle]}
+            {...rest}
+          />
+        );
+      },
+      [safeBottom]
     );
 
     const backdropComponent = useCallback(
@@ -54,13 +61,13 @@ export const SheetComponent = forwardRef<BottomSheetModal, DetachedContentProps>
         enableDynamicSizing
         backdropComponent={backdropComponent}
         backgroundComponent={backgroundComponent}
-        detached={detached}
+        // detached={detached}
         keyboardBehavior={'interactive'}
         keyboardBlurBehavior={'restore'}
-        bottomInset={bottomInset}
+        // bottomInset={bottomInset}
         handleIndicatorStyle={{}}
         {...rest}>
-        <Pressable onPress={Keyboard.dismiss} className="flex-1 px-4 py-2">
+        <Pressable onPress={Keyboard.dismiss} className="flex-1 px-4 pb-0">
           <BottomSheetView style={{ paddingBottom: safeBottom, flex: 1 }}>
             {children}
           </BottomSheetView>

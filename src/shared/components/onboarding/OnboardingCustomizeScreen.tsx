@@ -9,21 +9,19 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 interface OnboardingCustomizeScreenProps {
   onNext: () => void;
-  onSkip: () => void;
   onBack?: () => void;
   showBackButton?: boolean;
 }
 
 export function OnboardingCustomizeScreen({
   onNext,
-  onSkip,
   onBack,
   showBackButton,
 }: OnboardingCustomizeScreenProps) {
   return (
     <View className="flex-1 justify-between px-6 pb-8 pt-12">
       {/* Header buttons */}
-      <View className="flex-row items-center justify-between">
+      <View className="flex-row items-center justify-between pt-4">
         {showBackButton && onBack ? (
           <Button variant="ghost" onPress={onBack} className="px-4">
             <Ionicons name="arrow-back" size={20} color={THEME.dark.foreground} />
@@ -32,9 +30,7 @@ export function OnboardingCustomizeScreen({
         ) : (
           <View />
         )}
-        <Button variant="ghost" onPress={onSkip} className="px-4">
-          <Text className="text-base text-foreground/80">{t`Skip for now`}</Text>
-        </Button>
+        <View className="px-4" />
       </View>
 
       {/* Content */}
@@ -175,10 +171,10 @@ export function OnboardingCustomizeScreen({
           {/* Title */}
           <View className="mb-4 items-center">
             <Text className="text-center text-5xl font-bold leading-tight tracking-tight text-foreground">
-              {t`Stories Made`}
+              {t`Customize`}
               {'\n'}
               <Text className="text-center text-5xl font-bold leading-tight tracking-tight text-primary">
-                {t`Just for Them`}
+                {t`Your Stories`}
               </Text>
             </Text>
           </View>

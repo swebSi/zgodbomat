@@ -4,6 +4,7 @@ import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
 import { Label } from '@shared/components/ui/label';
 import { Text } from '@shared/components/ui/text';
+import { t } from '@lingui/core/macro';
 import { router, useLocalSearchParams } from 'expo-router';
 import * as React from 'react';
 import type { TextStyle } from 'react-native';
@@ -80,14 +81,14 @@ export default function VerifySecondFactor() {
 
       // Handle other statuses
       console.error(JSON.stringify(signInAttempt, null, 2));
-      setError('Verification incomplete. Please try again.');
+      setError(t`Verification incomplete. Please try again.`);
     } catch (err) {
       // See https://go.clerk.com/mRUDrIe for more info on error handling
       if (err instanceof Error) {
         setError(err.message);
       } else {
         console.error(JSON.stringify(err, null, 2));
-        setError('An error occurred. Please try again.');
+        setError(t`An error occurred. Please try again.`);
       }
     } finally {
       setIsLoading(false);
@@ -123,10 +124,10 @@ export default function VerifySecondFactor() {
             {/* Header */}
             <View className="gap-2">
               <Text variant="h1" className="text-center">
-                Verify your identity
+                {t`Verify your identity`}
               </Text>
               <Text variant="muted" className="text-center">
-                Enter the verification code sent to {email || 'your email'}
+                {t`Enter the verification code sent to`} {email || t`your email`}
               </Text>
             </View>
 
@@ -135,12 +136,12 @@ export default function VerifySecondFactor() {
               {/* Code Input */}
               <View className="gap-2">
                 <Label htmlFor="code" nativeID="code">
-                  Verification code
+                  {t`Verification code`}
                 </Label>
                 <Input
                   id="code"
                   nativeID="code"
-                  placeholder="Enter verification code"
+                  placeholder={t`Enter verification code`}
                   autoCapitalize="none"
                   onChangeText={(text) => {
                     setCode(text);
@@ -166,7 +167,7 @@ export default function VerifySecondFactor() {
                   onPress={onResendCode}
                   className="h-auto self-start p-0">
                   <Text variant="small" className="text-primary">
-                    Didn&apos;t receive the code? Resend{' '}
+                    {t`Didn't receive the code? Resend`}{' '}
                     {countdown > 0 ? (
                       <Text variant="small" style={TABULAR_NUMBERS_STYLE}>
                         ({countdown})
@@ -182,13 +183,13 @@ export default function VerifySecondFactor() {
                 onPress={onSubmit}
                 disabled={!isLoaded || isLoading}
                 size="lg">
-                <Text>{isLoading ? 'Verifying...' : 'Continue'}</Text>
+                <Text>{isLoading ? t`Verifying...` : t`Continue`}</Text>
               </Button>
 
               {/* Cancel Button */}
               <Button variant="ghost" className="mx-auto" onPress={router.back}>
                 <Text variant="small" className="text-muted-foreground">
-                  Cancel
+                  {t`Cancel`}
                 </Text>
               </Button>
             </View>

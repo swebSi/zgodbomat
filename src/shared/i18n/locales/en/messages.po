@@ -13,22 +13,450 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/shared/components/new-adventure-card.tsx:36
+#: src/app/(app)/(tabs)/settings.tsx:90
+msgid "Account security"
+msgstr "Account security"
+
+#: src/app/(app)/child-create.tsx:193
+msgid "Age"
+msgstr "Age"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:194
+msgid "AI Generated"
+msgstr "AI Generated"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:103
+msgid "All storage cleared! Redirecting to onboarding..."
+msgstr "All storage cleared! Redirecting to onboarding..."
+
+#: src/app/(app)/(tabs)/settings.tsx:162
+msgid "Allow cellular"
+msgstr "Allow cellular"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:74
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:91
+msgid "An error occurred. Please try again."
+msgstr "An error occurred. Please try again."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:28
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:81
+msgid "Back"
+msgstr "Back"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:192
+msgid "Cancel"
+msgstr "Cancel"
+
+#: src/app/(app)/child-create.tsx:172
+msgid "Child's name or nickname"
+msgstr "Child's name or nickname"
+
+#: src/app/(app)/child-create.tsx:215
+msgid "Choose an avatar"
+msgstr "Choose an avatar"
+
+#: src/app/(app)/(tabs)/settings.tsx:173
+msgid "Compact UI"
+msgstr "Compact UI"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:194
+msgid "Continue"
+msgstr "Continue"
+
+#: src/shared/components/new-adventure-card.tsx:48
 msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
 msgstr "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
 
-#: src/shared/components/new-adventure-card.tsx:46
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:52
+msgid "new-adventure-card.create-magic"
+msgstr "Create Magic"
+
+#: src/shared/components/new-adventure-card.tsx:58
 msgid "Create Magic"
 msgstr "Create Magic"
 
-#: src/shared/components/new-adventure-card.tsx:23
+#: src/app/(app)/child-create.tsx:260
+msgid "Create Story"
+msgstr "Create Story"
+
+#: src/app/(app)/child-create.tsx:257
+msgid "Creating..."
+msgstr "Creating..."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:174
+msgid "Customize"
+msgstr "Customize"
+
+#: src/app/(app)/(tabs)/settings.tsx:126
+msgid "Daily reminders and bedtime alerts"
+msgstr "Daily reminders and bedtime alerts"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:112
+msgid "Deep Space"
+msgstr "Deep Space"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:45
+msgid "new-adventure-card.description"
+msgstr "Description"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:170
+msgid "Didn't receive the code? Resend"
+msgstr "Didn't receive the code? Resend"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:220
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
+#: src/app/(app)/(tabs)/settings.tsx:143
+msgid "Downloads"
+msgstr "Downloads"
+
+#: src/app/(app)/child-create.tsx:160
+msgid "Edit Child Profile"
+msgstr "Edit Child Profile"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:76
+#: src/screens/auth/login/ui/LoginScreen.tsx:145
+msgid "Email"
+msgstr "Email"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:22
+msgid "Email is required"
+msgstr "Email is required"
+
+#: src/app/(app)/(tabs)/settings.tsx:44
+msgid "Email unavailable"
+msgstr "Email unavailable"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:17
+msgid "English"
+msgstr "English"
+
+#: src/app/(app)/child-create.tsx:200
+msgid "Enter age (1-10)"
+msgstr "Enter age (1-10)"
+
+#: src/app/(app)/child-create.tsx:179
+msgid "Enter name"
+msgstr "Enter name"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:98
+msgid "Enter new password"
+msgstr "Enter new password"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:84
+msgid "Enter the code sent to your email and set a new password"
+msgstr "Enter the code sent to your email and set a new password"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:130
+msgid "Enter the verification code sent to"
+msgstr "Enter the verification code sent to"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:126
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:144
+msgid "Enter verification code"
+msgstr "Enter verification code"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:81
+#: src/screens/auth/login/ui/LoginScreen.tsx:150
+msgid "Enter your email"
+msgstr "Enter your email"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:67
+msgid "Enter your email to reset your password"
+msgstr "Enter your email to reset your password"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:189
+msgid "Enter your password"
+msgstr "Enter your password"
+
+#: src/app/(app)/(tabs)/settings.tsx:105
+msgid "Face/Touch ID"
+msgstr "Face/Touch ID"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:58
+msgid "Failed to reset password. Please try again."
+msgstr "Failed to reset password. Please try again."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:45
+msgid "Failed to send reset code. Please try again."
+msgstr "Failed to send reset code. Please try again."
+
+#: src/app/(app)/(tabs)/settings.tsx:45
+msgid "Fetching email..."
+msgstr "Fetching email..."
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:180
+msgid "Forgot password?"
+msgstr "Forgot password?"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:64
+msgid "Forgot Password?"
+msgstr "Forgot Password?"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:276
+msgid "Get Started"
+msgstr "Get Started"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:63
+msgid "Just for Them"
+msgstr "Just for Them"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:141
+msgid "Kindness"
+msgstr "Kindness"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:83
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:136
+msgid "Leo"
+msgstr "Leo"
+
+#: src/app/(app)/(tabs)/settings.tsx:40
+msgid "Loading profile"
+msgstr "Loading profile"
+
+#: src/app/(app)/(tabs)/settings.tsx:198
+msgid "Log out"
+msgstr "Log out"
+
+#: src/app/(app)/(tabs)/settings.tsx:91
+msgid "Logged in with Clerk"
+msgstr "Logged in with Clerk"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:140
+msgid "Moral"
+msgstr "Moral"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:28
+msgid "new-adventure-card.new-adventure"
+msgstr "New Adventure"
+
+#: src/shared/components/new-adventure-card.tsx:33
 msgid "New Adventure"
 msgstr "New Adventure"
 
-#: src/shared/components/new-adventure-card.tsx:29
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:93
+msgid "New Password"
+msgstr "New Password"
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:39
+msgid "new-adventure-card.new-tale"
+msgstr "New Tale"
+
+#: src/shared/components/new-adventure-card.tsx:41
 msgid "New Tale"
 msgstr "New Tale"
 
-#: src/shared/components/new-adventure-card.tsx:28
+#: src/app/(app)/(tabs)/settings.tsx:124
+msgid "Notifications"
+msgstr "Notifications"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:175
+msgid "Password"
+msgstr "Password"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:31
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:29
+msgid "Please fill in all fields"
+msgstr "Please fill in all fields"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:215
+msgid "Please wait..."
+msgstr "Please wait..."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:266
+msgid "Record stories in your own voice so your little one can hear you anytime, anywhere."
+msgstr "Record stories in your own voice so your little one can hear you anytime, anywhere."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:234
+msgid "Recording..."
+msgstr "Recording..."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:119
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:160
+msgid "Remember your password?"
+msgstr "Remember your password?"
+
+#: src/app/(app)/(tabs)/settings.tsx:107
+msgid "Require biometrics for quick unlock"
+msgstr "Require biometrics for quick unlock"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:102
+msgid "Reset code sent! Check your email."
+msgstr "Reset code sent! Check your email."
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:48
+msgid "Reset incomplete. Please try again."
+msgstr "Reset incomplete. Please try again."
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:114
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:81
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:155
+msgid "Reset Password"
+msgstr "Reset Password"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:155
+msgid "Resetting..."
+msgstr "Resetting..."
+
+#: src/app/(app)/(tabs)/settings.tsx:145
+msgid "Save stories for offline nights"
+msgstr "Save stories for offline nights"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:114
+msgid "Sending..."
+msgstr "Sending..."
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:109
+msgid "Setting"
+msgstr "Setting"
+
+#: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:122
+#: src/screens/auth/login/ui/LoginScreen.tsx:215
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:164
+msgid "Sign in"
+msgstr "Sign in"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:62
+msgid "Sign in incomplete. Please try again."
+msgstr "Sign in incomplete. Please try again."
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:136
+msgid "Sign in to continue to your account"
+msgstr "Sign in to continue to your account"
+
+#: src/app/(app)/(tabs)/settings.tsx:199
+msgid "Sign out of this account"
+msgstr "Sign out of this account"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:224
+msgid "Sign up"
+msgstr "Sign up"
+
+#: src/app/(app)/(tabs)/settings.tsx:39
+msgid "Signed in user"
+msgstr "Signed in user"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:18
+msgid "Slovenian"
+msgstr "Slovenian"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:112
+msgid "Start the Magic"
+msgstr "Start the Magic"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:60
+msgid "Stories Made"
+msgstr "Stories Made"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:102
+msgid "Success"
+msgstr "Success"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:184
+msgid "Tell us about your child, pick a magical setting, and choose a life lesson. We'll weave a unique tale that sparks their imagination."
+msgstr "Tell us about your child, pick a magical setting, and choose a life lesson. We'll weave a unique tale that sparks their imagination."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:230
+msgid "The Sleepy Bear"
+msgstr "The Sleepy Bear"
+
+#: src/app/(app)/(tabs)/settings.tsx:175
+msgid "Tighter spacing for small screens"
+msgstr "Tighter spacing for small screens"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:69
+msgid "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
+msgstr "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
+
+#: src/app/(app)/child-create.tsx:259
+msgid "Update Child"
+msgstr "Update Child"
+
+#: src/app/(app)/child-create.tsx:164
+msgid "Update your child's information."
+msgstr "Update your child's information."
+
+#: src/app/(app)/child-create.tsx:256
+msgid "Updating..."
+msgstr "Updating..."
+
+#. placeholder {0}: user.id
+#: src/app/(app)/(tabs)/settings.tsx:75
+msgid "User ID: {0}"
+msgstr "User ID: {0}"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:139
+msgid "Verification code"
+msgstr "Verification code"
+
+#: src/screens/auth/password-reset/ui/PasswordReset.tsx:120
+msgid "Verification Code"
+msgstr "Verification Code"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:84
+msgid "Verification incomplete. Please try again."
+msgstr "Verification incomplete. Please try again."
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:127
+msgid "Verify your identity"
+msgstr "Verify your identity"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
+msgid "Verifying..."
+msgstr "Verifying..."
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:162
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:193
+msgid "Voice"
+msgstr "Voice"
+
+#: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:106
+msgid "We need your language to craft stories and voices that feel natural. This choice stays fixed so your library is consistent."
+msgstr "We need your language to craft stories and voices that feel natural. This choice stays fixed so your library is consistent."
+
+#: src/app/(app)/child-create.tsx:165
+msgid "We use this to personalize stories just for your child."
+msgstr "We use this to personalize stories just for your child."
+
+#. js-lingui-explicit-id
+#: src/shared/components/ui/new-adventure-card.tsx:36
+msgid "new-adventure-card.weave-a"
+msgstr "Weave a"
+
+#: src/shared/components/new-adventure-card.tsx:39
 msgid "Weave a"
 msgstr "Weave a"
+
+#: src/screens/auth/login/ui/LoginScreen.tsx:133
+msgid "Welcome back"
+msgstr "Welcome back"
+
+#: src/app/(app)/child-create.tsx:160
+msgid "Who is this story for?"
+msgstr "Who is this story for?"
+
+#: src/app/(app)/(tabs)/settings.tsx:162
+msgid "Wi‑Fi only"
+msgstr "Wi‑Fi only"
+
+#: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:130
+msgid "your email"
+msgstr "your email"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:165
+msgid "Your Own"
+msgstr "Your Own"
+
+#: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:177
+msgid "Your Stories"
+msgstr "Your Stories"
+
+#: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:260
+msgid "Your Voice, Their Dreams"
+msgstr "Your Voice, Their Dreams"

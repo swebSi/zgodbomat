@@ -15,12 +15,14 @@ interface SheetProviderProps {
 export const SheetProvider: FC<SheetProviderProps> = ({ children }) => {
   const initialSheetContext: ProviderType = {
     [AppSheet.INFO]: useRef<BottomSheetModal>(null),
+    [AppSheet.CHILD_SELECTION]: useRef<BottomSheetModal>(null),
   };
 
   return (
     <SheetContext.Provider value={initialSheetContext}>
       <BottomSheetModalProvider>
         <Bottom.SheetInfo />
+        <Bottom.SheetChildSelection />
         {children}
       </BottomSheetModalProvider>
     </SheetContext.Provider>

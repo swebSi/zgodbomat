@@ -4,6 +4,7 @@ import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
 import { Label } from '@shared/components/ui/label';
 import { Text } from '@shared/components/ui/text';
+import { t } from '@lingui/core/macro';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
@@ -18,7 +19,7 @@ export default function ForgotPassword() {
 
   const handleSubmit = async () => {
     if (!email.trim()) {
-      setError('Email is required');
+      setError(t`Email is required`);
       return;
     }
 
@@ -41,7 +42,7 @@ export default function ForgotPassword() {
       if (err instanceof Error) {
         setError(err.message);
       } else {
-        setError('Failed to send reset code. Please try again.');
+        setError(t`Failed to send reset code. Please try again.`);
       }
     } finally {
       setIsLoading(false);
@@ -60,10 +61,10 @@ export default function ForgotPassword() {
             {/* Header */}
             <View className="gap-2">
               <Text variant="h1" className="text-center">
-                Forgot Password?
+                {t`Forgot Password?`}
               </Text>
               <Text variant="muted" className="text-center">
-                Enter your email to reset your password
+                {t`Enter your email to reset your password`}
               </Text>
             </View>
 
@@ -72,12 +73,12 @@ export default function ForgotPassword() {
               {/* Email Input */}
               <View className="gap-2">
                 <Label htmlFor="email" nativeID="email">
-                  Email
+                  {t`Email`}
                 </Label>
                 <Input
                   id="email"
                   nativeID="email"
-                  placeholder="Enter your email"
+                  placeholder={t`Enter your email`}
                   onChangeText={(text) => {
                     setEmail(text);
                     setError(null);
@@ -98,7 +99,7 @@ export default function ForgotPassword() {
                 )}
                 {success && (
                   <Text variant="small" className="text-green-600 dark:text-green-400">
-                    Reset code sent! Check your email.
+                    {t`Reset code sent! Check your email.`}
                   </Text>
                 )}
               </View>
@@ -110,16 +111,16 @@ export default function ForgotPassword() {
                 disabled={isLoading || !isLoaded}
                 className="mt-6 h-12"
                 size="lg">
-                <Text>{isLoading ? 'Sending...' : 'Reset Password'}</Text>
+                <Text>{isLoading ? t`Sending...` : t`Reset Password`}</Text>
               </Button>
 
               {/* Back to Login */}
               <View className="border-border flex-row items-center justify-center gap-2 border-t pt-4">
-                <Text variant="muted">Remember your password?</Text>
+                <Text variant="muted">{t`Remember your password?`}</Text>
                 <Button variant="ghost" onPress={() => router.back()} className="h-auto p-0">
-                  <Text variant="small" className="text-primary font-medium">
-                    Sign in
-                  </Text>
+                    <Text variant="small" className="text-primary font-medium">
+                      {t`Sign in`}
+                    </Text>
                 </Button>
               </View>
             </View>

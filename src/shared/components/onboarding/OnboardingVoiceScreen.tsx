@@ -17,7 +17,6 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 interface OnboardingVoiceScreenProps {
   onNext: () => void;
-  onSkip: () => void;
   onBack?: () => void;
   showBackButton?: boolean;
 }
@@ -69,14 +68,13 @@ function WaveformBar({
 
 export function OnboardingVoiceScreen({
   onNext,
-  onSkip,
   onBack,
   showBackButton,
 }: OnboardingVoiceScreenProps) {
   return (
     <View className="flex-1 justify-between px-6 pb-8 pt-12">
       {/* Header buttons */}
-      <View className="flex-row items-center justify-between">
+      <View className="flex-row items-center justify-between pt-4">
         {showBackButton && onBack ? (
           <Button variant="ghost" onPress={onBack} className="px-4">
             <Ionicons name="arrow-back" size={20} color={THEME.dark.foreground} />
@@ -85,9 +83,7 @@ export function OnboardingVoiceScreen({
         ) : (
           <View />
         )}
-        <Button variant="ghost" onPress={onSkip} className="px-4">
-          <Text className="text-base text-foreground/80">{t`Skip for now`}</Text>
-        </Button>
+        <View className="px-4" />
       </View>
 
       {/* Content */}

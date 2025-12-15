@@ -4,6 +4,7 @@ import { Button } from '@shared/components/ui/button';
 import { Input } from '@shared/components/ui/input';
 import { Label } from '@shared/components/ui/label';
 import { Text } from '@shared/components/ui/text';
+import { t } from '@lingui/core/macro';
 import { Link, router, useLocalSearchParams } from 'expo-router';
 import { useRef, useState } from 'react';
 import type { TextInput } from 'react-native';
@@ -25,7 +26,7 @@ export default function PasswordReset() {
     }
 
     if (!code.trim() || !password.trim()) {
-      setError({ code: '', password: 'Please fill in all fields' });
+      setError({ code: '', password: t`Please fill in all fields` });
       return;
     }
 
@@ -44,7 +45,7 @@ export default function PasswordReset() {
         router.replace('/(app)');
         return;
       }
-      setError({ password: 'Reset incomplete. Please try again.' });
+      setError({ password: t`Reset incomplete. Please try again.` });
     } catch (err) {
       if (err instanceof Error) {
         const isPasswordMessage = err.message.toLowerCase().includes('password');
@@ -54,7 +55,7 @@ export default function PasswordReset() {
             : { code: err.message, password: '' }
         );
       } else {
-        setError({ password: 'Failed to reset password. Please try again.' });
+        setError({ password: t`Failed to reset password. Please try again.` });
       }
     } finally {
       setIsLoading(false);
@@ -77,10 +78,10 @@ export default function PasswordReset() {
             {/* Header */}
             <View className="gap-2">
               <Text variant="h1" className="text-center">
-                Reset Password
+                {t`Reset Password`}
               </Text>
               <Text variant="muted" className="text-center">
-                Enter the code sent to your email and set a new password
+                {t`Enter the code sent to your email and set a new password`}
               </Text>
             </View>
 
@@ -89,12 +90,12 @@ export default function PasswordReset() {
               {/* Password Input */}
               <View className="gap-2">
                 <Label htmlFor="reset-password" nativeID="reset-password">
-                  New Password
+                  {t`New Password`}
                 </Label>
                 <Input
                   id="reset-password"
                   nativeID="reset-password"
-                  placeholder="Enter new password"
+                  placeholder={t`Enter new password`}
                   onChangeText={(text) => {
                     setPassword(text);
                     setError({});
@@ -116,13 +117,13 @@ export default function PasswordReset() {
               {/* Code Input */}
               <View className="gap-2">
                 <Label htmlFor="reset-code" nativeID="reset-code">
-                  Verification Code
+                  {t`Verification Code`}
                 </Label>
                 <Input
                   ref={codeInputRef}
                   id="reset-code"
                   nativeID="reset-code"
-                  placeholder="Enter verification code"
+                  placeholder={t`Enter verification code`}
                   onChangeText={(text) => {
                     setCode(text);
                     setError({});
@@ -151,16 +152,16 @@ export default function PasswordReset() {
                 disabled={isLoading || !isLoaded}
                 className="mt-6 h-12"
                 size="lg">
-                <Text>{isLoading ? 'Resetting...' : 'Reset Password'}</Text>
+                <Text>{isLoading ? t`Resetting...` : t`Reset Password`}</Text>
               </Button>
 
               {/* Back to Login */}
               <View className="border-border flex-row items-center justify-center gap-2 border-t pt-4">
-                <Text variant="muted">Remember your password?</Text>
+                <Text variant="muted">{t`Remember your password?`}</Text>
                 <Link href="/(auth)/login" asChild>
                   <Button variant="ghost" className="h-auto p-0">
                     <Text variant="small" className="text-primary font-medium">
-                      Sign in
+                      {t`Sign in`}
                     </Text>
                   </Button>
                 </Link>
