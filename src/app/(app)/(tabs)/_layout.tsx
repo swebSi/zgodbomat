@@ -1,9 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import { THEME, useColorScheme } from '@shared/lib/theme';
-import { Tabs } from 'expo-router';
+import { Tabs, useRouter } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 export default function TabLayout() {
+  const router = useRouter();
   const { colorScheme } = useColorScheme();
   const theme = THEME[colorScheme ?? 'light'];
   const inactiveColor = theme.mutedForeground;
@@ -53,8 +54,7 @@ export default function TabLayout() {
             <View className="relative flex-1 items-center justify-center">
               <Pressable
                 onPress={() => {
-                  // Handle create action
-                  console.log('Create pressed');
+                  router.push('/(app)/story-prompt');
                 }}
                 className="elevation-sm absolute -top-8 h-16 w-16 items-center justify-center rounded-full bg-primary shadow-md">
                 <Ionicons name="add" size={28} color="#000" />

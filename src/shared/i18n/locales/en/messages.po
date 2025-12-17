@@ -13,13 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/(app)/(tabs)/settings.tsx:90
+#: src/app/(app)/(tabs)/settings.tsx:92
 msgid "Account security"
 msgstr "Account security"
+
+#: src/app/(app)/story-prompt.tsx:52
+msgid "Adventurous"
+msgstr "Adventurous"
 
 #: src/app/(app)/child-create.tsx:193
 msgid "Age"
 msgstr "Age"
+
+#. placeholder {0}: child.age
+#: src/app/(app)/story-prompt.tsx:172
+msgid "Age {0} years old"
+msgstr "Age {0} years old"
 
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:194
 msgid "AI Generated"
@@ -29,7 +38,7 @@ msgstr "AI Generated"
 msgid "All storage cleared! Redirecting to onboarding..."
 msgstr "All storage cleared! Redirecting to onboarding..."
 
-#: src/app/(app)/(tabs)/settings.tsx:162
+#: src/app/(app)/(tabs)/settings.tsx:164
 msgid "Allow cellular"
 msgstr "Allow cellular"
 
@@ -38,14 +47,45 @@ msgstr "Allow cellular"
 msgid "An error occurred. Please try again."
 msgstr "An error occurred. Please try again."
 
+#: src/app/(app)/story-prompt.tsx:67
+msgid "Animal Characters"
+msgstr "Animal Characters"
+
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:28
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:81
 msgid "Back"
 msgstr "Back"
 
+#: src/app/(app)/story-prompt.tsx:42
+msgid "Bravery"
+msgstr "Bravery"
+
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:192
 msgid "Cancel"
 msgstr "Cancel"
+
+#: src/app/(app)/(tabs)/library.tsx:60
+#: src/app/(app)/story-detail.tsx:101
+msgid "Chapter"
+msgstr "Chapter"
+
+#. placeholder {0}: chapter.chapterNumber
+#. placeholder {0}: chapter.chapter_number
+#: src/app/(app)/story-detail.tsx:123
+#: src/app/(app)/story-prompt.tsx:373
+msgid "Chapter {0}"
+msgstr "Chapter {0}"
+
+#: src/app/(app)/(tabs)/library.tsx:60
+#: src/app/(app)/story-detail.tsx:101
+#: src/app/(app)/story-detail.tsx:112
+#: src/app/(app)/story-prompt.tsx:363
+msgid "Chapters"
+msgstr "Chapters"
+
+#: src/app/(app)/story-prompt.tsx:302
+msgid "Character Type"
+msgstr "Character Type"
 
 #: src/app/(app)/child-create.tsx:172
 msgid "Child's name or nickname"
@@ -55,7 +95,7 @@ msgstr "Child's name or nickname"
 msgid "Choose an avatar"
 msgstr "Choose an avatar"
 
-#: src/app/(app)/(tabs)/settings.tsx:173
+#: src/app/(app)/(tabs)/settings.tsx:175
 msgid "Compact UI"
 msgstr "Compact UI"
 
@@ -63,6 +103,18 @@ msgstr "Compact UI"
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:194
 msgid "Continue"
 msgstr "Continue"
+
+#: src/app/(app)/story-prompt.tsx:398
+msgid "Copy"
+msgstr "Copy"
+
+#: src/app/(app)/story-prompt.tsx:36
+msgid "Cozy Village"
+msgstr "Cozy Village"
+
+#: src/app/(app)/story-prompt.tsx:151
+msgid "Create"
+msgstr "Create"
 
 #: src/shared/components/new-adventure-card.tsx:48
 msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
@@ -81,15 +133,23 @@ msgstr "Create Magic"
 msgid "Create Story"
 msgstr "Create Story"
 
+#: src/app/(app)/story-prompt.tsx:270
+msgid "Create Story Prompt"
+msgstr "Create Story Prompt"
+
 #: src/app/(app)/child-create.tsx:257
 msgid "Creating..."
 msgstr "Creating..."
+
+#: src/app/(app)/story-prompt.tsx:48
+msgid "Creativity"
+msgstr "Creativity"
 
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:174
 msgid "Customize"
 msgstr "Customize"
 
-#: src/app/(app)/(tabs)/settings.tsx:126
+#: src/app/(app)/(tabs)/settings.tsx:128
 msgid "Daily reminders and bedtime alerts"
 msgstr "Daily reminders and bedtime alerts"
 
@@ -102,6 +162,10 @@ msgstr "Deep Space"
 msgid "new-adventure-card.description"
 msgstr "Description"
 
+#: src/app/(app)/story-prompt.tsx:37
+msgid "Desert Oasis"
+msgstr "Desert Oasis"
+
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:170
 msgid "Didn't receive the code? Resend"
 msgstr "Didn't receive the code? Resend"
@@ -110,7 +174,7 @@ msgstr "Didn't receive the code? Resend"
 msgid "Don't have an account?"
 msgstr "Don't have an account?"
 
-#: src/app/(app)/(tabs)/settings.tsx:143
+#: src/app/(app)/(tabs)/settings.tsx:145
 msgid "Downloads"
 msgstr "Downloads"
 
@@ -127,9 +191,13 @@ msgstr "Email"
 msgid "Email is required"
 msgstr "Email is required"
 
-#: src/app/(app)/(tabs)/settings.tsx:44
+#: src/app/(app)/(tabs)/settings.tsx:46
 msgid "Email unavailable"
 msgstr "Email unavailable"
+
+#: src/app/(app)/story-prompt.tsx:30
+msgid "Enchanted Forest"
+msgstr "Enchanted Forest"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:17
 msgid "English"
@@ -173,9 +241,17 @@ msgstr "Enter your email to reset your password"
 msgid "Enter your password"
 msgstr "Enter your password"
 
-#: src/app/(app)/(tabs)/settings.tsx:105
+#: src/app/(app)/story-prompt.tsx:256
+msgid "Error"
+msgstr "Error"
+
+#: src/app/(app)/(tabs)/settings.tsx:107
 msgid "Face/Touch ID"
 msgstr "Face/Touch ID"
+
+#: src/app/(app)/story-prompt.tsx:257
+msgid "Failed to generate story. Please try again."
+msgstr "Failed to generate story. Please try again."
 
 #: src/screens/auth/password-reset/ui/PasswordReset.tsx:58
 msgid "Failed to reset password. Please try again."
@@ -185,7 +261,11 @@ msgstr "Failed to reset password. Please try again."
 msgid "Failed to send reset code. Please try again."
 msgstr "Failed to send reset code. Please try again."
 
-#: src/app/(app)/(tabs)/settings.tsx:45
+#: src/app/(app)/story-prompt.tsx:69
+msgid "Fantasy Creatures"
+msgstr "Fantasy Creatures"
+
+#: src/app/(app)/(tabs)/settings.tsx:47
 msgid "Fetching email..."
 msgstr "Fetching email..."
 
@@ -197,14 +277,55 @@ msgstr "Forgot password?"
 msgid "Forgot Password?"
 msgstr "Forgot Password?"
 
+#: src/app/(app)/story-prompt.tsx:41
+msgid "Friendship"
+msgstr "Friendship"
+
+#: src/app/(app)/story-prompt.tsx:54
+msgid "Funny & Playful"
+msgstr "Funny & Playful"
+
+#: src/app/(app)/story-prompt.tsx:345
+msgid "Generate Story"
+msgstr "Generate Story"
+
+#: src/app/(app)/story-prompt.tsx:338
+msgid "Generating Story..."
+msgstr "Generating Story..."
+
+#: src/app/(app)/story-prompt.tsx:282
+msgid "Generating your magical story..."
+msgstr "Generating your magical story..."
+
+#: src/app/(app)/story-prompt.tsx:53
+msgid "Gentle & Calming"
+msgstr "Gentle & Calming"
+
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:276
 msgid "Get Started"
 msgstr "Get Started"
+
+#: src/app/(app)/story-prompt.tsx:44
+msgid "Honesty"
+msgstr "Honesty"
+
+#: src/app/(app)/story-prompt.tsx:68
+msgid "Human Characters"
+msgstr "Human Characters"
+
+#: src/app/(app)/story-prompt.tsx:381
+msgid "Image Prompt"
+msgstr "Image Prompt"
+
+#: src/app/(app)/story-prompt.tsx:56
+msgid "Inspiring"
+msgstr "Inspiring"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:63
 msgid "Just for Them"
 msgstr "Just for Them"
 
+#: src/app/(app)/story-prompt.tsx:43
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:141
 msgid "Kindness"
 msgstr "Kindness"
@@ -214,21 +335,65 @@ msgstr "Kindness"
 msgid "Leo"
 msgstr "Leo"
 
-#: src/app/(app)/(tabs)/settings.tsx:40
+#: src/app/(app)/(tabs)/settings.tsx:42
 msgid "Loading profile"
 msgstr "Loading profile"
 
-#: src/app/(app)/(tabs)/settings.tsx:198
+#: src/app/(app)/(tabs)/library.tsx:89
+msgid "Loading stories..."
+msgstr "Loading stories..."
+
+#: src/app/(app)/story-detail.tsx:52
+msgid "Loading story..."
+msgstr "Loading story..."
+
+#: src/app/(app)/(tabs)/settings.tsx:200
 msgid "Log out"
 msgstr "Log out"
 
-#: src/app/(app)/(tabs)/settings.tsx:91
+#: src/app/(app)/(tabs)/settings.tsx:93
 msgid "Logged in with Clerk"
 msgstr "Logged in with Clerk"
+
+#: src/app/(app)/story-prompt.tsx:63
+msgid "Long (15-20 min)"
+msgstr "Long (15-20 min)"
+
+#: src/app/(app)/story-prompt.tsx:57
+msgid "Magical"
+msgstr "Magical"
+
+#: src/app/(app)/story-prompt.tsx:31
+msgid "Magical Castle"
+msgstr "Magical Castle"
+
+#: src/app/(app)/story-prompt.tsx:62
+msgid "Medium (10-15 min)"
+msgstr "Medium (10-15 min)"
+
+#: src/app/(app)/story-prompt.tsx:70
+msgid "Mixed"
+msgstr "Mixed"
 
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:140
 msgid "Moral"
 msgstr "Moral"
+
+#: src/app/(app)/story-prompt.tsx:309
+msgid "Moral Lesson"
+msgstr "Moral Lesson"
+
+#: src/app/(app)/story-prompt.tsx:35
+msgid "Mountain Peak"
+msgstr "Mountain Peak"
+
+#: src/app/(app)/story-prompt.tsx:55
+msgid "Mysterious"
+msgstr "Mysterious"
+
+#: src/app/(app)/story-prompt.tsx:34
+msgid "Mysterious Jungle"
+msgstr "Mysterious Jungle"
 
 #. js-lingui-explicit-id
 #: src/shared/components/ui/new-adventure-card.tsx:28
@@ -252,7 +417,15 @@ msgstr "New Tale"
 msgid "New Tale"
 msgstr "New Tale"
 
-#: src/app/(app)/(tabs)/settings.tsx:124
+#: src/app/(app)/story-prompt.tsx:144
+msgid "No child selected"
+msgstr "No child selected"
+
+#: src/app/(app)/(tabs)/library.tsx:105
+msgid "No stories yet. Create your first magical bedtime story!"
+msgstr "No stories yet. Create your first magical bedtime story!"
+
+#: src/app/(app)/(tabs)/settings.tsx:126
 msgid "Notifications"
 msgstr "Notifications"
 
@@ -260,10 +433,18 @@ msgstr "Notifications"
 msgid "Password"
 msgstr "Password"
 
+#: src/app/(app)/story-prompt.tsx:45
+msgid "Perseverance"
+msgstr "Perseverance"
+
 #: src/screens/auth/login/ui/LoginScreen.tsx:31
 #: src/screens/auth/password-reset/ui/PasswordReset.tsx:29
 msgid "Please fill in all fields"
 msgstr "Please fill in all fields"
+
+#: src/app/(app)/story-prompt.tsx:147
+msgid "Please select or create a child first"
+msgstr "Please select or create a child first"
 
 #: src/screens/auth/login/ui/LoginScreen.tsx:215
 msgid "Please wait..."
@@ -282,7 +463,7 @@ msgstr "Recording..."
 msgid "Remember your password?"
 msgstr "Remember your password?"
 
-#: src/app/(app)/(tabs)/settings.tsx:107
+#: src/app/(app)/(tabs)/settings.tsx:109
 msgid "Require biometrics for quick unlock"
 msgstr "Require biometrics for quick unlock"
 
@@ -304,7 +485,11 @@ msgstr "Reset Password"
 msgid "Resetting..."
 msgstr "Resetting..."
 
-#: src/app/(app)/(tabs)/settings.tsx:145
+#: src/app/(app)/story-prompt.tsx:47
+msgid "Respect"
+msgstr "Respect"
+
+#: src/app/(app)/(tabs)/settings.tsx:147
 msgid "Save stories for offline nights"
 msgstr "Save stories for offline nights"
 
@@ -312,9 +497,18 @@ msgstr "Save stories for offline nights"
 msgid "Sending..."
 msgstr "Sending..."
 
+#: src/app/(app)/story-prompt.tsx:295
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:109
 msgid "Setting"
 msgstr "Setting"
+
+#: src/app/(app)/story-prompt.tsx:46
+msgid "Sharing"
+msgstr "Sharing"
+
+#: src/app/(app)/story-prompt.tsx:61
+msgid "Short (5-10 min)"
+msgstr "Short (5-10 min)"
 
 #: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:122
 #: src/screens/auth/login/ui/LoginScreen.tsx:215
@@ -330,7 +524,7 @@ msgstr "Sign in incomplete. Please try again."
 msgid "Sign in to continue to your account"
 msgstr "Sign in to continue to your account"
 
-#: src/app/(app)/(tabs)/settings.tsx:199
+#: src/app/(app)/(tabs)/settings.tsx:201
 msgid "Sign out of this account"
 msgstr "Sign out of this account"
 
@@ -338,7 +532,7 @@ msgstr "Sign out of this account"
 msgid "Sign up"
 msgstr "Sign up"
 
-#: src/app/(app)/(tabs)/settings.tsx:39
+#: src/app/(app)/(tabs)/settings.tsx:41
 msgid "Signed in user"
 msgstr "Signed in user"
 
@@ -346,13 +540,42 @@ msgstr "Signed in user"
 msgid "Slovenian"
 msgstr "Slovenian"
 
+#: src/app/(app)/story-prompt.tsx:33
+msgid "Starry Galaxy"
+msgstr "Starry Galaxy"
+
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:112
 msgid "Start the Magic"
 msgstr "Start the Magic"
 
+#: src/app/(app)/(tabs)/library.tsx:120
+msgid "stories"
+msgstr "stories"
+
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:60
 msgid "Stories Made"
 msgstr "Stories Made"
+
+#: src/app/(app)/(tabs)/library.tsx:120
+msgid "story"
+msgstr "story"
+
+#: src/app/(app)/story-detail.tsx:44
+#: src/app/(app)/story-detail.tsx:63
+msgid "Story"
+msgstr "Story"
+
+#: src/app/(app)/story-prompt.tsx:323
+msgid "Story Length"
+msgstr "Story Length"
+
+#: src/app/(app)/story-detail.tsx:73
+msgid "Story Not Found"
+msgstr "Story Not Found"
+
+#: src/app/(app)/story-prompt.tsx:316
+msgid "Story Tone"
+msgstr "Story Tone"
 
 #: src/screens/auth/login/ui/LoginScreen.tsx:102
 msgid "Success"
@@ -366,13 +589,25 @@ msgstr "Tell us about your child, pick a magical setting, and choose a life less
 msgid "The Sleepy Bear"
 msgstr "The Sleepy Bear"
 
-#: src/app/(app)/(tabs)/settings.tsx:175
+#: src/app/(app)/story-detail.tsx:76
+msgid "The story you're looking for doesn't exist or you don't have access to it."
+msgstr "The story you're looking for doesn't exist or you don't have access to it."
+
+#: src/app/(app)/story-prompt.tsx:284
+msgid "This may take a moment"
+msgstr "This may take a moment"
+
+#: src/app/(app)/(tabs)/settings.tsx:177
 msgid "Tighter spacing for small screens"
 msgstr "Tighter spacing for small screens"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:69
 msgid "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
 msgstr "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
+
+#: src/app/(app)/story-prompt.tsx:32
+msgid "Underwater Kingdom"
+msgstr "Underwater Kingdom"
 
 #: src/app/(app)/child-create.tsx:259
 msgid "Update Child"
@@ -387,7 +622,7 @@ msgid "Updating..."
 msgstr "Updating..."
 
 #. placeholder {0}: user.id
-#: src/app/(app)/(tabs)/settings.tsx:75
+#: src/app/(app)/(tabs)/settings.tsx:77
 msgid "User ID: {0}"
 msgstr "User ID: {0}"
 
@@ -410,6 +645,10 @@ msgstr "Verify your identity"
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
 msgid "Verifying..."
 msgstr "Verifying..."
+
+#: src/app/(app)/story-prompt.tsx:412
+msgid "View Story"
+msgstr "View Story"
 
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:162
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:193
@@ -441,7 +680,7 @@ msgstr "Welcome back"
 msgid "Who is this story for?"
 msgstr "Who is this story for?"
 
-#: src/app/(app)/(tabs)/settings.tsx:162
+#: src/app/(app)/(tabs)/settings.tsx:164
 msgid "Wi‑Fi only"
 msgstr "Wi‑Fi only"
 
@@ -449,10 +688,15 @@ msgstr "Wi‑Fi only"
 msgid "your email"
 msgstr "your email"
 
+#: src/app/(app)/(tabs)/library.tsx:102
+msgid "Your Library"
+msgstr "Your Library"
+
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:165
 msgid "Your Own"
 msgstr "Your Own"
 
+#: src/app/(app)/(tabs)/library.tsx:118
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:177
 msgid "Your Stories"
 msgstr "Your Stories"

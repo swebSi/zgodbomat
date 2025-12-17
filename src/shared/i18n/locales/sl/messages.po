@@ -11,13 +11,22 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#: src/app/(app)/(tabs)/settings.tsx:90
+#: src/app/(app)/(tabs)/settings.tsx:92
 msgid "Account security"
 msgstr "Varnost računa"
+
+#: src/app/(app)/story-prompt.tsx:52
+msgid "Adventurous"
+msgstr "Pustolovsko"
 
 #: src/app/(app)/child-create.tsx:193
 msgid "Age"
 msgstr "Starost"
+
+#. placeholder {0}: child.age
+#: src/app/(app)/story-prompt.tsx:172
+msgid "Age {0} years old"
+msgstr "Star {0} let"
 
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:194
 msgid "AI Generated"
@@ -27,7 +36,7 @@ msgstr "Ustvarjeno z AI"
 msgid "All storage cleared! Redirecting to onboarding..."
 msgstr "Vsa shramba je izbrisana! Preusmerjanje na uvod..."
 
-#: src/app/(app)/(tabs)/settings.tsx:162
+#: src/app/(app)/(tabs)/settings.tsx:164
 msgid "Allow cellular"
 msgstr "Dovoli mobilne podatke"
 
@@ -36,14 +45,45 @@ msgstr "Dovoli mobilne podatke"
 msgid "An error occurred. Please try again."
 msgstr "Prišlo je do napake. Poskusite znova."
 
+#: src/app/(app)/story-prompt.tsx:67
+msgid "Animal Characters"
+msgstr "Živalski liki"
+
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:28
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:81
 msgid "Back"
 msgstr "Nazaj"
 
+#: src/app/(app)/story-prompt.tsx:42
+msgid "Bravery"
+msgstr "Pogum"
+
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:192
 msgid "Cancel"
 msgstr "Prekliči"
+
+#: src/app/(app)/(tabs)/library.tsx:60
+#: src/app/(app)/story-detail.tsx:101
+msgid "Chapter"
+msgstr "Poglavje"
+
+#. placeholder {0}: chapter.chapterNumber
+#. placeholder {0}: chapter.chapter_number
+#: src/app/(app)/story-detail.tsx:123
+#: src/app/(app)/story-prompt.tsx:373
+msgid "Chapter {0}"
+msgstr "Poglavje {0}"
+
+#: src/app/(app)/(tabs)/library.tsx:60
+#: src/app/(app)/story-detail.tsx:101
+#: src/app/(app)/story-detail.tsx:112
+#: src/app/(app)/story-prompt.tsx:363
+msgid "Chapters"
+msgstr "Poglavja"
+
+#: src/app/(app)/story-prompt.tsx:302
+msgid "Character Type"
+msgstr "Vrsta lika"
 
 #: src/app/(app)/child-create.tsx:172
 msgid "Child's name or nickname"
@@ -53,7 +93,7 @@ msgstr "Ime ali vzdevek otroka"
 msgid "Choose an avatar"
 msgstr "Izberite avatar"
 
-#: src/app/(app)/(tabs)/settings.tsx:173
+#: src/app/(app)/(tabs)/settings.tsx:175
 msgid "Compact UI"
 msgstr "Kompakten vmesnik"
 
@@ -61,6 +101,18 @@ msgstr "Kompakten vmesnik"
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:194
 msgid "Continue"
 msgstr "Nadaljuj"
+
+#: src/app/(app)/story-prompt.tsx:398
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: src/app/(app)/story-prompt.tsx:36
+msgid "Cozy Village"
+msgstr "Udobna vas"
+
+#: src/app/(app)/story-prompt.tsx:151
+msgid "Create"
+msgstr "Ustvari"
 
 #: src/shared/components/new-adventure-card.tsx:48
 msgid "Create a magical bedtime story in seconds. Pick a theme, choose a hero, and let the magic begin."
@@ -79,15 +131,23 @@ msgstr "Ustvari čarobnost"
 msgid "Create Story"
 msgstr "Ustvari zgodbo"
 
+#: src/app/(app)/story-prompt.tsx:270
+msgid "Create Story Prompt"
+msgstr "Ustvari besedilo za zgodbo"
+
 #: src/app/(app)/child-create.tsx:257
 msgid "Creating..."
 msgstr "Ustvarjanje..."
+
+#: src/app/(app)/story-prompt.tsx:48
+msgid "Creativity"
+msgstr "Ustvarjalnost"
 
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:174
 msgid "Customize"
 msgstr "Prilagodite"
 
-#: src/app/(app)/(tabs)/settings.tsx:126
+#: src/app/(app)/(tabs)/settings.tsx:128
 msgid "Daily reminders and bedtime alerts"
 msgstr "Dnevni opomniki in obvestila za spanje"
 
@@ -100,6 +160,10 @@ msgstr "Globoko vesolje"
 msgid "new-adventure-card.description"
 msgstr "Ustvarite čarobno zgodbo pred spanjem v sekundah. Izberite temo, izberite junaka in naj se čarobnost začne."
 
+#: src/app/(app)/story-prompt.tsx:37
+msgid "Desert Oasis"
+msgstr "Puščavska oaza"
+
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:170
 msgid "Didn't receive the code? Resend"
 msgstr "Niste prejeli kode? Pošljite ponovno"
@@ -108,7 +172,7 @@ msgstr "Niste prejeli kode? Pošljite ponovno"
 msgid "Don't have an account?"
 msgstr "Nimate računa?"
 
-#: src/app/(app)/(tabs)/settings.tsx:143
+#: src/app/(app)/(tabs)/settings.tsx:145
 msgid "Downloads"
 msgstr "Prenosi"
 
@@ -125,9 +189,13 @@ msgstr "E-pošta"
 msgid "Email is required"
 msgstr "E-pošta je obvezna"
 
-#: src/app/(app)/(tabs)/settings.tsx:44
+#: src/app/(app)/(tabs)/settings.tsx:46
 msgid "Email unavailable"
 msgstr "E-pošta ni na voljo"
+
+#: src/app/(app)/story-prompt.tsx:30
+msgid "Enchanted Forest"
+msgstr "Začarani gozd"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:17
 msgid "English"
@@ -171,9 +239,17 @@ msgstr "Vnesite e-pošto za ponastavitev gesla"
 msgid "Enter your password"
 msgstr "Vnesite geslo"
 
-#: src/app/(app)/(tabs)/settings.tsx:105
+#: src/app/(app)/story-prompt.tsx:256
+msgid "Error"
+msgstr ""
+
+#: src/app/(app)/(tabs)/settings.tsx:107
 msgid "Face/Touch ID"
 msgstr "Face/Touch ID"
+
+#: src/app/(app)/story-prompt.tsx:257
+msgid "Failed to generate story. Please try again."
+msgstr ""
 
 #: src/screens/auth/password-reset/ui/PasswordReset.tsx:58
 msgid "Failed to reset password. Please try again."
@@ -183,7 +259,11 @@ msgstr "Ponastavitev gesla ni uspela. Poskusite znova."
 msgid "Failed to send reset code. Please try again."
 msgstr "Pošiljanje kode ni uspelo. Poskusite znova."
 
-#: src/app/(app)/(tabs)/settings.tsx:45
+#: src/app/(app)/story-prompt.tsx:69
+msgid "Fantasy Creatures"
+msgstr "Fantazijske bitke"
+
+#: src/app/(app)/(tabs)/settings.tsx:47
 msgid "Fetching email..."
 msgstr "Pridobivanje e-pošte..."
 
@@ -195,14 +275,55 @@ msgstr "Ste pozabili geslo?"
 msgid "Forgot Password?"
 msgstr "Ste pozabili geslo?"
 
+#: src/app/(app)/story-prompt.tsx:41
+msgid "Friendship"
+msgstr "Prijateljstvo"
+
+#: src/app/(app)/story-prompt.tsx:54
+msgid "Funny & Playful"
+msgstr "Smešno in igrivo"
+
+#: src/app/(app)/story-prompt.tsx:345
+msgid "Generate Story"
+msgstr ""
+
+#: src/app/(app)/story-prompt.tsx:338
+msgid "Generating Story..."
+msgstr ""
+
+#: src/app/(app)/story-prompt.tsx:282
+msgid "Generating your magical story..."
+msgstr ""
+
+#: src/app/(app)/story-prompt.tsx:53
+msgid "Gentle & Calming"
+msgstr "Nezno in pomirjujoče"
+
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:276
 msgid "Get Started"
 msgstr "Začni"
+
+#: src/app/(app)/story-prompt.tsx:44
+msgid "Honesty"
+msgstr "Poštenost"
+
+#: src/app/(app)/story-prompt.tsx:68
+msgid "Human Characters"
+msgstr "Človeški liki"
+
+#: src/app/(app)/story-prompt.tsx:381
+msgid "Image Prompt"
+msgstr ""
+
+#: src/app/(app)/story-prompt.tsx:56
+msgid "Inspiring"
+msgstr "Navdihujoče"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:63
 msgid "Just for Them"
 msgstr "Samo zanje"
 
+#: src/app/(app)/story-prompt.tsx:43
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:141
 msgid "Kindness"
 msgstr "Prijaznost"
@@ -212,21 +333,65 @@ msgstr "Prijaznost"
 msgid "Leo"
 msgstr "Leo"
 
-#: src/app/(app)/(tabs)/settings.tsx:40
+#: src/app/(app)/(tabs)/settings.tsx:42
 msgid "Loading profile"
 msgstr "Nalaganje profila"
 
-#: src/app/(app)/(tabs)/settings.tsx:198
+#: src/app/(app)/(tabs)/library.tsx:89
+msgid "Loading stories..."
+msgstr "Nalaganje zgodb..."
+
+#: src/app/(app)/story-detail.tsx:52
+msgid "Loading story..."
+msgstr "Nalaganje zgodbe..."
+
+#: src/app/(app)/(tabs)/settings.tsx:200
 msgid "Log out"
 msgstr "Odjava"
 
-#: src/app/(app)/(tabs)/settings.tsx:91
+#: src/app/(app)/(tabs)/settings.tsx:93
 msgid "Logged in with Clerk"
 msgstr "Prijavljen prek Clerk"
+
+#: src/app/(app)/story-prompt.tsx:63
+msgid "Long (15-20 min)"
+msgstr "Dolga (15-20 min)"
+
+#: src/app/(app)/story-prompt.tsx:57
+msgid "Magical"
+msgstr "Čarobno"
+
+#: src/app/(app)/story-prompt.tsx:31
+msgid "Magical Castle"
+msgstr "Čarobni grad"
+
+#: src/app/(app)/story-prompt.tsx:62
+msgid "Medium (10-15 min)"
+msgstr "Srednja (10-15 min)"
+
+#: src/app/(app)/story-prompt.tsx:70
+msgid "Mixed"
+msgstr "Mešano"
 
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:140
 msgid "Moral"
 msgstr "Nauk"
+
+#: src/app/(app)/story-prompt.tsx:309
+msgid "Moral Lesson"
+msgstr "Moralni nauk"
+
+#: src/app/(app)/story-prompt.tsx:35
+msgid "Mountain Peak"
+msgstr "Gorski vrh"
+
+#: src/app/(app)/story-prompt.tsx:55
+msgid "Mysterious"
+msgstr "Skrivnostno"
+
+#: src/app/(app)/story-prompt.tsx:34
+msgid "Mysterious Jungle"
+msgstr "Skrivnostna džungla"
 
 #. js-lingui-explicit-id
 #: src/shared/components/ui/new-adventure-card.tsx:28
@@ -250,7 +415,15 @@ msgstr "Nova zgodba"
 msgid "New Tale"
 msgstr "Nova zgodba"
 
-#: src/app/(app)/(tabs)/settings.tsx:124
+#: src/app/(app)/story-prompt.tsx:144
+msgid "No child selected"
+msgstr "Otrok ni izbran"
+
+#: src/app/(app)/(tabs)/library.tsx:105
+msgid "No stories yet. Create your first magical bedtime story!"
+msgstr "Še ni zgodb. Ustvarite svojo prvo čarobno zgodbo pred spanjem!"
+
+#: src/app/(app)/(tabs)/settings.tsx:126
 msgid "Notifications"
 msgstr "Obvestila"
 
@@ -258,10 +431,18 @@ msgstr "Obvestila"
 msgid "Password"
 msgstr "Geslo"
 
+#: src/app/(app)/story-prompt.tsx:45
+msgid "Perseverance"
+msgstr "Vztrajnost"
+
 #: src/screens/auth/login/ui/LoginScreen.tsx:31
 #: src/screens/auth/password-reset/ui/PasswordReset.tsx:29
 msgid "Please fill in all fields"
 msgstr "Prosimo, izpolnite vsa polja"
+
+#: src/app/(app)/story-prompt.tsx:147
+msgid "Please select or create a child first"
+msgstr "Najprej izberite ali ustvarite otroka"
 
 #: src/screens/auth/login/ui/LoginScreen.tsx:215
 msgid "Please wait..."
@@ -280,7 +461,7 @@ msgstr "Snemanje..."
 msgid "Remember your password?"
 msgstr "Se spomnite gesla?"
 
-#: src/app/(app)/(tabs)/settings.tsx:107
+#: src/app/(app)/(tabs)/settings.tsx:109
 msgid "Require biometrics for quick unlock"
 msgstr "Zahtevaj biometrijo za hitro odklepanje"
 
@@ -302,7 +483,11 @@ msgstr "Ponastavi geslo"
 msgid "Resetting..."
 msgstr "Ponastavljanje..."
 
-#: src/app/(app)/(tabs)/settings.tsx:145
+#: src/app/(app)/story-prompt.tsx:47
+msgid "Respect"
+msgstr "Spoštovanje"
+
+#: src/app/(app)/(tabs)/settings.tsx:147
 msgid "Save stories for offline nights"
 msgstr "Shrani zgodbe za noči brez povezave"
 
@@ -310,9 +495,18 @@ msgstr "Shrani zgodbe za noči brez povezave"
 msgid "Sending..."
 msgstr "Pošiljanje..."
 
+#: src/app/(app)/story-prompt.tsx:295
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:109
 msgid "Setting"
 msgstr "Nastavitev"
+
+#: src/app/(app)/story-prompt.tsx:46
+msgid "Sharing"
+msgstr "Deljenje"
+
+#: src/app/(app)/story-prompt.tsx:61
+msgid "Short (5-10 min)"
+msgstr "Kratka (5-10 min)"
 
 #: src/screens/auth/forgot-password/ui/ForgotPassword.tsx:122
 #: src/screens/auth/login/ui/LoginScreen.tsx:215
@@ -328,7 +522,7 @@ msgstr "Prijava ni dokončana. Poskusite znova."
 msgid "Sign in to continue to your account"
 msgstr "Prijavite se za nadaljevanje v svoj račun"
 
-#: src/app/(app)/(tabs)/settings.tsx:199
+#: src/app/(app)/(tabs)/settings.tsx:201
 msgid "Sign out of this account"
 msgstr "Odjavite se iz tega računa"
 
@@ -336,7 +530,7 @@ msgstr "Odjavite se iz tega računa"
 msgid "Sign up"
 msgstr "Ustvari račun"
 
-#: src/app/(app)/(tabs)/settings.tsx:39
+#: src/app/(app)/(tabs)/settings.tsx:41
 msgid "Signed in user"
 msgstr "Prijavljen uporabnik"
 
@@ -344,13 +538,42 @@ msgstr "Prijavljen uporabnik"
 msgid "Slovenian"
 msgstr "Slovenščina"
 
+#: src/app/(app)/story-prompt.tsx:33
+msgid "Starry Galaxy"
+msgstr "Zvezdna galaksija"
+
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:112
 msgid "Start the Magic"
 msgstr "Začni čarovnijo"
 
+#: src/app/(app)/(tabs)/library.tsx:120
+msgid "stories"
+msgstr "zgodbe"
+
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:60
 msgid "Stories Made"
 msgstr "Zgodbe ustvarjene"
+
+#: src/app/(app)/(tabs)/library.tsx:120
+msgid "story"
+msgstr "zgodba"
+
+#: src/app/(app)/story-detail.tsx:44
+#: src/app/(app)/story-detail.tsx:63
+msgid "Story"
+msgstr ""
+
+#: src/app/(app)/story-prompt.tsx:323
+msgid "Story Length"
+msgstr "Dolžina zgodbe"
+
+#: src/app/(app)/story-detail.tsx:73
+msgid "Story Not Found"
+msgstr "Zgodba ni najdena"
+
+#: src/app/(app)/story-prompt.tsx:316
+msgid "Story Tone"
+msgstr "Ton zgodbe"
 
 #: src/screens/auth/login/ui/LoginScreen.tsx:102
 msgid "Success"
@@ -364,13 +587,25 @@ msgstr "Povejte nam o svojem otroku, izberite čarobno okolje in nauk. Ustvarili
 msgid "The Sleepy Bear"
 msgstr "Zaspani medved"
 
-#: src/app/(app)/(tabs)/settings.tsx:175
+#: src/app/(app)/story-detail.tsx:76
+msgid "The story you're looking for doesn't exist or you don't have access to it."
+msgstr "Zgodba, ki jo iščete, ne obstaja ali pa do nje nimate dostopa."
+
+#: src/app/(app)/story-prompt.tsx:284
+msgid "This may take a moment"
+msgstr ""
+
+#: src/app/(app)/(tabs)/settings.tsx:177
 msgid "Tighter spacing for small screens"
 msgstr "Tesnejši razmiki za manjše zaslone"
 
 #: src/shared/components/onboarding/OnboardingWelcomeScreen.tsx:69
 msgid "Turn bedtime into an adventure. Generate custom stories with lessons you choose, featuring your child as the hero."
 msgstr "Spremenite čas za spanje v pustolovščino. Ustvarite zgodbe z nauki po svoji izbiri, v katerih je vaš otrok junak."
+
+#: src/app/(app)/story-prompt.tsx:32
+msgid "Underwater Kingdom"
+msgstr "Podvodno kraljestvo"
 
 #: src/app/(app)/child-create.tsx:259
 msgid "Update Child"
@@ -385,7 +620,7 @@ msgid "Updating..."
 msgstr "Posodabljanje..."
 
 #. placeholder {0}: user.id
-#: src/app/(app)/(tabs)/settings.tsx:75
+#: src/app/(app)/(tabs)/settings.tsx:77
 msgid "User ID: {0}"
 msgstr "ID uporabnika: {0}"
 
@@ -408,6 +643,10 @@ msgstr "Preverite svojo identiteto"
 #: src/screens/auth/verify-second-factor/ui/VerifySecondFactor.tsx:186
 msgid "Verifying..."
 msgstr "Preverjanje..."
+
+#: src/app/(app)/story-prompt.tsx:412
+msgid "View Story"
+msgstr ""
 
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:162
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:193
@@ -439,7 +678,7 @@ msgstr "Dobrodošli nazaj"
 msgid "Who is this story for?"
 msgstr "Za koga je ta zgodba?"
 
-#: src/app/(app)/(tabs)/settings.tsx:162
+#: src/app/(app)/(tabs)/settings.tsx:164
 msgid "Wi‑Fi only"
 msgstr "Samo Wi‑Fi"
 
@@ -447,10 +686,15 @@ msgstr "Samo Wi‑Fi"
 msgid "your email"
 msgstr "vašo e-pošto"
 
+#: src/app/(app)/(tabs)/library.tsx:102
+msgid "Your Library"
+msgstr "Vaša knjižnica"
+
 #: src/shared/components/onboarding/OnboardingVoiceScreen.tsx:165
 msgid "Your Own"
 msgstr "Vaš glas"
 
+#: src/app/(app)/(tabs)/library.tsx:118
 #: src/shared/components/onboarding/OnboardingCustomizeScreen.tsx:177
 msgid "Your Stories"
 msgstr "Vaše zgodbe"

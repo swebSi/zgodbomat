@@ -9,6 +9,9 @@
  */
 
 import type * as children from "../children.js";
+import type * as http from "../http.js";
+import type * as r2 from "../r2.js";
+import type * as stories from "../stories.js";
 
 import type {
   ApiFromModules,
@@ -18,6 +21,9 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   children: typeof children;
+  http: typeof http;
+  r2: typeof r2;
+  stories: typeof stories;
 }>;
 
 /**

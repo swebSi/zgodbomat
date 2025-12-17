@@ -35,7 +35,17 @@ export default defineSchema({
     childId: v.id('children'),
     title: v.string(),
     content: v.string(),
+    chapters: v.array(
+      v.object({
+        chapterNumber: v.number(),
+        text: v.string(),
+        imagePrompt: v.string(),
+        imageUrl: v.optional(v.string()),
+      })
+    ),
     voiceId: v.optional(v.id('voices')),
+    audioUrl: v.optional(v.string()),
+    audioStorageId: v.optional(v.id('_storage')),
     createdAt: v.number(),
     updatedAt: v.number(),
   })

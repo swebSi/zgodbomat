@@ -58,6 +58,8 @@ export default function AppLayout() {
     <Stack>
       <Stack.Screen name="(tabs)" options={{ headerShown: false, title: 'Home' }} />
       <Stack.Screen name="child-create" options={{ headerShown: true, title: 'Child Profile' }} />
+      <Stack.Screen name="story-prompt" options={{ headerShown: false }} />
+      <Stack.Screen name="story-detail" options={{ headerShown: false }} />
     </Stack>
   );
 }

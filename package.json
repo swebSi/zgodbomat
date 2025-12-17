@@ -26,10 +26,13 @@
     "lingui:compile": "lingui compile"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.952.0",
+    "@aws-sdk/s3-request-presigner": "^3.952.0",
     "@clerk/clerk-expo": "^2.19.11",
     "@convex-dev/react-query": "^0.1.0",
     "@dev-plugins/react-native-mmkv": "^0.4.0",
     "@expo/vector-icons": "^15.0.3",
+    "@google/genai": "^1.33.0",
     "@gorhom/bottom-sheet": "^5.2.8",
     "@hookform/resolvers": "^5.2.2",
     "@lingui/cli": "^5.7.0",
@@ -54,6 +57,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "expo": "~54.0.27",
+    "expo-audio": "~1.1.0",
     "expo-constants": "~18.0.11",
     "expo-crypto": "~15.0.8",
     "expo-dev-client": "~6.0.20",
@@ -84,6 +88,7 @@
     "react-native-reanimated": "~4.1.1",
     "react-native-safe-area-context": "~5.6.0",
     "react-native-screens": "~4.16.0",
+    "react-native-sound": "^0.13.0",
     "react-native-svg": "15.12.1",
     "react-native-web": "~0.21.0",
     "react-native-worklets": "0.5.1",
@@ -106,7 +111,8 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.0",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "wrangler": "^4.54.0"
   },
   "private": true
 }

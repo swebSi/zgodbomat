@@ -7,7 +7,7 @@ import { NewAdventureCard } from '@shared/components/new-adventure-card';
 import { Text } from '@shared/components/ui/text';
 import { useUserSettingsStore } from '@shared/stores/user-store';
 import { useQuery } from '@tanstack/react-query';
-import { useRouter } from 'expo-router';
+import { router, useRouter } from 'expo-router';
 import { useMemo } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 import { api } from '../../../../convex/_generated/api';
@@ -111,8 +111,7 @@ export default function Home() {
         <View className="p-4">
           <NewAdventureCard
             onPress={() => {
-              // Handle create magic action
-              console.log('Create Magic pressed');
+              router.push('/(app)/story-prompt');
             }}
           />
         </View>
